@@ -11,7 +11,7 @@ const Spotlight = () => {
         {spotlight.map(({ id, title, des, img, link }) => (
           <div
             key={id}
-            className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+            className="sm:h-[30rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
           >
             <PinContainer title={link} href={link}>
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] sm:h-[40vh] mb-5">
@@ -20,7 +20,7 @@ const Spotlight = () => {
                 </div>
                 <iframe
                   src={link}
-                  title="What is IoT? Explained by Prof. Chandana Gamage | SLIoT Challenge 2023"
+                  title=""
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin"

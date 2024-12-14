@@ -31,6 +31,7 @@ const Gallery = () => {
               spareImg,
               link,
               overlayClassName,
+              imageArray,
             }) => (
               <BentoGridItem
                 id={id}
@@ -44,6 +45,7 @@ const Gallery = () => {
                 spareImg={spareImg}
                 link={link}
                 overlayClassName={overlayClassName}
+                imageArray={imageArray}
               />
             )
           )}
