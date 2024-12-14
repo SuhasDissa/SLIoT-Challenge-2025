@@ -1,6 +1,7 @@
 import Gallery from "@/components/Gallery";
 import About from "../components/About";
 import Spotlight from "@/components/Spotlight";
+import TimeLine from "@/components/design/TimeLine";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <About />
       <Gallery />
       <Spotlight />
+      <TimeLine/>
     </div>
   );
 };

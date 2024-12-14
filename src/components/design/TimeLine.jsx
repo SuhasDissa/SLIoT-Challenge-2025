@@ -66,7 +66,7 @@ export default function TimeLine() {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
-      isActive: true,
+      isActive: false,
     },
     {
       date: "To be decided",
@@ -121,7 +121,7 @@ export default function TimeLine() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen min-h-screen align-middle bg-n-15">
+    <div className="flex flex-col items-center justify-center w-screen min-h-screen align-middle bg-transparent">
       <div className="space-y-8 w-[60%] relative mx-10 my-5 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
         {events.map((event, index) => (
           <div
@@ -131,13 +131,13 @@ export default function TimeLine() {
             <div className="flex items-center justify-center w-8 h-8 rounded-full group-[.is-active]:bg-n-14 bg-n-14 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-6 md:group-even:translate-x-6">
              {event.isActive? <FaCheck/>:<FaCalendarAlt/>}
             </div>
-            <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-transparent relative group z-0 rounded-2xl justify-center align-middle shadow-2xl shadow-blue-800">
-              <div className="p-10 w-full bg-n-4 m-auto hover:border border border-transparent hover:border-n-4 hover:shadow-lg hover:shadow-black transition-all duration-700 rounded-[1em] overflow-hidden relative group z-0">
-                <div className="circle absolute h-[10em] w-[10em] -top-[5.5em] -right-[5.5em] rounded-full bg-n-3 group-hover:scale-[800%] duration-1000 z-[-1] op"></div>
-                <h1 className="z-20 text-white font-poppins font-bold group-hover:text-n-14 duration-500 text-[1.4em]">
+            <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-transparent relative group z-0 rounded-2xl justify-center align-middle shadow-2xl shadow-black">
+              <div className="p-10 w-full bg-transparent border-n-14 m-auto hover:border border  hover:border-n-4 hover:shadow-lg hover:shadow-black transition-all duration-700 rounded-[1em] overflow-hidden relative group z-0">
+                <div className="circle absolute h-[10em] w-[10em] -top-[5.5em] -right-[5.5em] rounded-full  group-hover:scale-[800%] duration-1000 z-[-1]  bg-n-23"></div>
+                <h1 className="z-20 text-white font-poppins font-bold group-hover:text-n-14 duration-500 text-lg  sm:text-[1.4em]">
                   {event.date}
                 </h1>
-                <h1 className="z-20 text-3xl font-Poppins font-semibold group-hover:text-white duration-500 text-[1.4em]">
+                <h1 className="z-20  font-Poppins font-semibold text-white group-hover:text-white duration-500 text-sm sm:text-[1.4em]">
                   {event.title}
                 </h1>
               </div>
