@@ -12,12 +12,34 @@ h1 {
     width: 100%;
 }
 
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    pointer-events: none;
+    width: 100vw;
+    height: 200%;
+    overflow: hidden;
+}
+
 .product {
     flex: auto;
     font-size: 1.5rem;
     margin: 0 1vw calc(1vw + 50px) 1vw;
     min-width: calc(33% - 2vw);
     position: relative;
+    animation: entry 1s linear 1;
+}
+
+.product:hover+.bg {
+    opacity: 1;
+    background: -moz-linear-gradient(-45deg, #632c65 15%, #56a5e2 100%);
+    background: -webkit-linear-gradient(-45deg, #632c65 15%, #56a5e2 100%);
+    background: linear-gradient(135deg, #632c65 15%, #56a5e2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#632c65', endColorstr='#56a5e2', GradientType=1);
 }
 
 .product:before {
@@ -28,13 +50,19 @@ h1 {
 
 .content {
     background: white;
-    border-radius: 30%;
+    border-radius: 100%;
     height: 84%;
     margin: 8%;
     position: absolute;
     width: 84%;
     vertical-align: middle;
     z-index: 5000;
+    transition: .5s all ease;
+    transform: rotateX(40deg) scale(0.9);
+}
+
+.product:hover .content {
+    transform: rotateX(0deg) scale(1);
 }
 
 .product:hover .effect-1,
@@ -44,7 +72,7 @@ h1 {
 
 .effect-1,
 .effect-2 {
-    border-radius: 30%;
+    border-radius: 100%;
     display: none;
     // mix-blend-mode: multiply;
     height: 84%;
@@ -91,20 +119,20 @@ h1 {
     }
 }
 
+@keyframes entry {
+    0% {
+      top: -20%;
+      opacity: 0.1;
+    }
+    100% {
+      top: 0%;
+    }
+  }
+
 .title {
     position: relative;
     top: calc(100% + 16px);
 }
-
-.title span {
-    display: block;
-    font-family: Helvetica, Arial, Sans-Serif;
-    font-size: 0.6rem;
-    letter-spacing: 0.1rem;
-    margin-top: 8px;
-    text-transform: uppercase;
-}
-
 
 .sleep {
     background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
@@ -112,25 +140,4 @@ h1 {
     height: 50%;
     margin: 25%;
     width: 50%;
-}
-
-.bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    opacity: 0;
-    transition: all 0.5s ease-in;
-    pointer-events: none;
-    width: 100vw;
-    height: 200%;
-    overflow: hidden;
-}
-
-.product:hover+.bg {
-    opacity: 1;
-    background: -moz-linear-gradient(-45deg, #632c65 15%, #56a5e2 100%);
-    background: -webkit-linear-gradient(-45deg, #632c65 15%, #56a5e2 100%);
-    background: linear-gradient(135deg, #632c65 15%, #56a5e2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#632c65', endColorstr='#56a5e2', GradientType=1);
 }

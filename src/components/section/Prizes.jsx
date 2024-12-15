@@ -10,11 +10,10 @@ const Prizes = () => {
           <div class="effect-1"></div>
           <div class="effect-2"></div>
           <div class="content">
-            <div class="sleep"></div>
+            <div class="text-black">3rd</div>
           </div>
           <span class="title">
-            Sleep
-            <span>Restore Balance</span>
+            LKR 10,000
           </span>
         </div>
 
@@ -23,11 +22,10 @@ const Prizes = () => {
           <div class="effect-1"></div>
           <div class="effect-2"></div>
           <div class="content">
-            <div class="sleep"></div>
+            <div class="text-black">1st</div>
           </div>
           <span class="title">
-            Sleep
-            <span>Restore Balance</span>
+            LKR 25,000
           </span>
         </div>
 
@@ -36,11 +34,10 @@ const Prizes = () => {
           <div class="effect-1"></div>
           <div class="effect-2"></div>
           <div class="content">
-            <div class="sleep"></div>
+          <div class="text-black">2nd</div>
           </div>
           <span class="title">
-            Sleep
-            <span>Restore Balance</span>
+            LKR 15,000
           </span>
         </div>
         <div class="bg"></div>
