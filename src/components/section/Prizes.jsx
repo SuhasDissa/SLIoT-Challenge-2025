@@ -60,7 +60,7 @@ const Prizes = () => {
             <div className="text-black">1st</div>
           </div>
           <span className="title">
-            LKR 25,000
+            {prizes[category][0]}
           </span>
         </div>
         <div className="bg"></div>
@@ -72,7 +72,7 @@ const Prizes = () => {
             <div className="text-black">2nd</div>
           </div>
           <span className="title">
-            LKR 15,000
+            {prizes[category][1]}
           </span>
         </div>
         <div className="bg"></div>
@@ -84,7 +84,7 @@ const Prizes = () => {
             <div className="text-black">3rd</div>
           </div>
           <span className="title">
-            LKR 10,000
+            {prizes[category][2]}
           </span>
         </div>
         <div className="bg"></div>
