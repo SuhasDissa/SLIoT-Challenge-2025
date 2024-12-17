@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 import { currentSLIoTShowcases, previousSLIoTShowcases } from "@/constants";
 import MagicButton from "./ui/MagicButton";
+import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
+import { robot } from "@/assets";
 
 const Gallery = () => {
   const [showAll, setShowAll] = useState(false);
@@ -109,6 +111,17 @@ const Gallery = () => {
           )}
         </div>
       </section>
+      <CardContainer className="inter-var">
+        <CardBody className="relative group/card  w-auto sm:w-[30rem] h-auto">
+          <CardItem translateZ="100" className="w-full mt-4">
+            <img
+              src={robot}
+              className="w-full object-cover rounded-xl"
+              alt="thumbnail"
+            />
+          </CardItem>
+        </CardBody>
+      </CardContainer>
     </div>
   );
 };

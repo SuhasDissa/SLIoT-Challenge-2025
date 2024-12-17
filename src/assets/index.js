@@ -46,6 +46,8 @@ import sliot2019_9 from "./gallery/SLIoT2019/9.jpg";
 import sliot2019_10 from "./gallery/SLIoT2019/10.jpg";
 import sliot2019_11 from "./gallery/SLIoT2019/11.jpg";
 
+import robot from "./robot.png";
+
 import bg from "./bg.png";
 
 export {
@@ -90,5 +92,6 @@ export {
   sliot2019_9,
   sliot2019_10,
   sliot2019_11,
+  robot,
   bg,
 };
