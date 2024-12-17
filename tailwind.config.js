@@ -11,6 +11,7 @@ export default {
   ],
   theme: {
     extend: {
+      
       colors: {
         color: {
           1: "#AC6AFF",
@@ -46,6 +47,8 @@ export default {
           20: "#32b57a",
           21: "#f5f5f5",
           22: "#e8e8e8",
+          23: "rgba(59, 0, 38, 1)",
+          24:"rgba(9, 6, 18, 1) 100%"
         },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
