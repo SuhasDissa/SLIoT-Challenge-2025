@@ -14,7 +14,9 @@ const Home = () => {
       <About />
       <Gallery />
       <Spotlight />
+
      <Prizes />
+
       <TimeLine/>
       <ShiftingCountdown/>
    
