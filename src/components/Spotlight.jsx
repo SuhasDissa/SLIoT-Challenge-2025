@@ -5,7 +5,7 @@ import { bg } from "@/assets";
 
 const Spotlight = () => {
   return (
-    <div className="w-full justify-center items-center text-n-1">
+    <div className="w-full justify-center items-center text-n-1 mt-20">
       <h2 className="text-4xl text-n-1 text-center">SLIoT IN THE SPOTLIGHT</h2>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24">
         {spotlight.map(({ id, title, des, img, link }) => (

@@ -55,6 +55,8 @@ import sliot2019_11 from "./gallery/SLIoT2019/11.jpg";
 
 import robot from "./robot.png";
 
+import sltLogo from "./SLT-Mobitel.png"
+
 import bg from "./bg.png";
 
 export {
@@ -101,5 +103,6 @@ export {
   sliot2019_10,
   sliot2019_11,
   robot,
+  sltLogo,
   bg,
 };
