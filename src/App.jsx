@@ -6,6 +6,8 @@ import OurTeam from "./pages/OurTeam";
 import Events from "./pages/Events";
 import Partners from "./pages/Partners";
 import Footer from "./components/Footer";
+import EventOrganizers from "./pages/EventOrganizers"
+import Contactus from "./pages/Contactus"
 import SLIoTHeroSection from "./components/SLIoTHeroSection";
 
 const App = () => {
@@ -20,6 +22,8 @@ const App = () => {
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/ourteam" element={<OurTeam />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/eventOrganizers" element={<EventOrganizers />} />
+            <Route path="/contactus" element={<Contactus />} />
             <Route path ="/Partners" element={<Partners />} />
           </Routes>
         </div>
