@@ -5,6 +5,7 @@ import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import logo from "../assets/svg/sliot-logo.svg";
+import MagicButton from "./ui/MagicButton";
 
 const Header = () => {
   const pathname = useLocation();
@@ -27,10 +28,10 @@ const Header = () => {
           className={`fixed top-0 w-full px-[5%] lg:px-[4%] xl:px-[10%] mx-auto z-50 shadow-lg backdrop-blur-lg ${
             openNavigation
               ? "bg-white/30"
-              : "bg-white/45 lg:backdrop-blur-lg"
+              : "lg:backdrop-blur-md bg-opacity-40 backdrop-brightness-75"
           }`}
         >
-          <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
+          <div className="flex items-center justify-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
             <a className="flex items-center w-[12rem] xl:mr-8" href="/">
               <img src={logo} width={100} height={100} alt="orea" />
             </a>
@@ -50,8 +51,8 @@ const Header = () => {
                     } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-sm lg:font-normal ${
                       item.url === pathname.pathname
                         ? "z-2 lg:text-n-4"
-                        : "lg:text-n-2"
-                    } lg:leading-5 lg:hover:text-n-1`}
+                        : "lg:text-n-1"
+                    } lg:leading-5 lg:hover:text-n-3`}
                   >
                     {item.title}
                   </a>
@@ -59,10 +60,16 @@ const Header = () => {
               </div>
               <HamburgerMenu />
             </nav>
-
-            <button className="relative px-6 py-2 text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-500 rounded-lg border-2 border-transparent hover:text-white transition duration-300 before:absolute before:inset-0 before:-z-10 before:rounded-lg before:bg-gradient-to-r before:from-blue-400 before:to-pink-500 before:content-[''] before:p-[2px]">
-      Contact
-    </button>
+            <button
+              className="relative inline-flex h-12 overflow-hidden rounded-2xl p-[1px] focus:outline-none"
+            >
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#2b0091_0%,#393BB2_50%,#ff00a4_100%)]" />
+              <span
+                className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-2xl bg-slate-950 px-12 text-sm font-medium bg-n- text-n-1 backdrop-blur-3xl gap-2`}
+              >
+                Contact
+              </span>
+            </button>
           </div>
         </div>
       </div>

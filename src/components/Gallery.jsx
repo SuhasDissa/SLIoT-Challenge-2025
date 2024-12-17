@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 import { currentSLIoTShowcases, previousSLIoTShowcases } from "@/constants";
 import MagicButton from "./ui/MagicButton";
-import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
-import { robot } from "@/assets";
 
 const Gallery = () => {
   const [showAll, setShowAll] = useState(false);
@@ -14,8 +12,8 @@ const Gallery = () => {
 
   return (
     <div className="w-full justify-center items-center px-[10%]">
-      <h2 className="text-4xl text-n-1 text-center">Gallery</h2>
-      <h3 className="text-2xl text-n-1 text-start">Previous SLIoT Showcases</h3>
+      <h2 className="text-4xl text-n-1 text-center mt-28">Gallery</h2>
+      <h3 className="text-2xl text-n-4 text-start mt-10 mb-6">Previous SLIoT Showcases</h3>
       <section id="gallery">
         <BentoGrid>
           {(showAll
@@ -63,13 +61,10 @@ const Gallery = () => {
           )}
         </div>
       </section>
-      <h3 className="text-2xl text-n-1 text-start">SLIoT 2025 Showcases</h3>
+      <h3 className="text-2xl text-n-4 text-start mt-10 mb-6">SLIoT 2025 Showcases</h3>
       <section id="gallery">
         <BentoGrid>
-          {(showAll2
-            ? currentSLIoTShowcases
-            : currentSLIoTShowcases.slice(0, 3)
-          ).map(
+          {currentSLIoTShowcases.map(
             ({
               id,
               title,
@@ -100,7 +95,7 @@ const Gallery = () => {
             )
           )}
         </BentoGrid>
-        <div
+        {/* <div
           className="text-center max-w-fit max-h-fit mx-auto"
           onClick={toggleShowMore2}
         >
@@ -109,19 +104,8 @@ const Gallery = () => {
           ) : (
             <MagicButton title="Show More" />
           )}
-        </div>
+        </div> */}
       </section>
-      <CardContainer className="inter-var">
-        <CardBody className="relative group/card  w-auto sm:w-[30rem] h-auto">
-          <CardItem translateZ="100" className="w-full mt-4">
-            <img
-              src={robot}
-              className="w-full object-cover rounded-xl"
-              alt="thumbnail"
-            />
-          </CardItem>
-        </CardBody>
-      </CardContainer>
     </div>
   );
 };
