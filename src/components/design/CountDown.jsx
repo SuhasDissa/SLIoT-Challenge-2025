@@ -6,7 +6,7 @@ import { useAnimate } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 // NOTE: Change this date to whatever date you want to countdown to :)
-const COUNTDOWN_FROM = "2024-12-18";
+const COUNTDOWN_FROM = "2024-12-25";
 
 const SECOND = 1000;
 const MINUTE = SECOND * 60;
@@ -33,7 +33,7 @@ const ShiftingCountdown = () => {
               
               
               
-              className="py-2 mb-10 font-mono text-red-800 text-7xl " >Registration Closed</motion.h1>
+              className="flex justify-center mt-20 mb-10 font-poppins text-2xl text-center text-red-600 sm:text-5xl uppercase border py-6 px-10 rounded-lg" >Registration Closed</motion.h1>
              
              </div>
     )
@@ -49,7 +49,7 @@ const ShiftingCountdown = () => {
       
       
       
-      className="flex justify-center py-2 mb-10 font-mono text-2xl text-center text-white sm:text-5xl" >Registration Closes In</motion.h1>
+      className="flex justify-center py-2 mt-20 mb-10 font-poppins text-2xl text-center text-white sm:text-5xl uppercase" >Registration Closes In</motion.h1>
       <div className="flex items-center justify-center w-full mx-auto md:gap-10 ">
         <CountdownItem unit="Day" text="days" />
         <CountdownItem unit="Hour" text="hours" />

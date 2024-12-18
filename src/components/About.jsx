@@ -5,7 +5,7 @@ import { aboutGridItems } from "../constants";
 const About = () => {
   return (
     <div className="w-full justify-center items-center px-[10%]">
-      <h2 className="text-4xl text-n-1 text-center">ABOUT SLIoT</h2>
+      <h2 className="text-5xl text-n-1 text-center">ABOUT SLIoT</h2>
       <section id="about" className="mt-10">
         <BentoGrid>
           {aboutGridItems.map(

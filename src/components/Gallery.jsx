@@ -12,7 +12,7 @@ const Gallery = () => {
 
   return (
     <div className="w-full justify-center items-center px-[10%]">
-      <h2 className="text-4xl text-n-1 text-center mt-28">Gallery</h2>
+      <h2 className="text-5xl text-n-1 text-center mt-28">GALLERY</h2>
       <h3 className="text-2xl text-n-4 text-start mt-10 mb-6">Previous SLIoT Showcases</h3>
       <section id="gallery">
         <BentoGrid>

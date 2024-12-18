@@ -41,14 +41,9 @@ import {
 
 export const navigation = [
   {
-    id: "0",
+    id: "1",
     title: "Home",
     url: "/",
-  },
-  {
-    id: "1",
-    title: "Industry4.0",
-    url: "/industry4.0",
   },
   {
     id: "2",
@@ -64,7 +59,6 @@ export const navigation = [
     id: "4",
     title: "Challenge",
     url: "/challenge",
-    onlyMobile: true,
   },
    {
     id: "5",
@@ -85,6 +79,12 @@ export const navigation = [
     id: "8",
     title: "Partners",
     url: "/partners",
+  },
+  {
+    id: "9",
+    title: "Contact",
+    url: "/Contact",
+    onlyMobile: true,
   },
 ];
 
@@ -438,4 +438,29 @@ export const spotlight = [
     img: "/p4.svg",
     link: "https://www.youtube.com/embed/UVdn4ZTJ3_Q",
   },
+];
+
+export const categories = [
+  {
+    id: 1,
+    title: "SCHOOL CATEGORY",
+    category: "school",
+  },
+  {
+    id: 2,
+    title: "UNIVERSITY CATEGORY",
+    category: "university",
+  },
+  {
+    id: 3,
+    title: "OPEN CATEGORY",
+    category: "open",
+  },
+  // {
+  //   id: 4,
+  //   title: "Lead Frontend Developer",
+  //   desc: "Developed and maintained user-facing features using modern frontend technologies.",
+  //   className: "md:col-span-2",
+  //   thumbnail: "/exp4.svg",
+  // },
 ];

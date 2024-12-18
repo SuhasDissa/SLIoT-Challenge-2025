@@ -7,6 +7,9 @@ import About from "../components/About";
 import Spotlight from "@/components/Spotlight";
 import TimeLine from "@/components/design/TimeLine";
 import ShiftingCountdown from "@/components/design/CountDown";
+import EventOrganizers from "@/components/EventOrganizers";
+import ContactUs from "@/components/ContactUs";
+import Details from "@/components/Details";
 
 const Home = () => {
   return (
@@ -15,10 +18,12 @@ const Home = () => {
       <Gallery />
       <Spotlight />
 
-     <Prizes />
-
+      <Prizes />
+      <Details />
       <TimeLine/>
       <ShiftingCountdown/>
+      <EventOrganizers />
+      <ContactUs />
    
     </div>
   );

@@ -56,6 +56,9 @@ import sliot2019_11 from "./gallery/SLIoT2019/11.jpg";
 import robot from "./robot.png";
 
 import sltLogo from "./SLT-Mobitel.png"
+import cse from "./cse.jpg";
+import iesl from "./iesl.gif";
+import uom from "./uom.gif";
 
 import bg from "./bg.png";
 
@@ -104,5 +107,8 @@ export {
   sliot2019_11,
   robot,
   sltLogo,
+  cse,
+  iesl,
+  uom,
   bg,
 };
