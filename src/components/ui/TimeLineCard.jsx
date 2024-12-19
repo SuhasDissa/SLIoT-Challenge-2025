@@ -35,7 +35,7 @@ initial={{
                         <h1 className="z-20 text-white font-poppins font-bold group-hover:text-n-4 duration-500 text-lg  sm:text-[1.4em]">
                           {event.date}
                         </h1>
-                        <h1 className="z-20 font-Poppins font-semibold bg-gradient-to-br from-slate-300 to-slate-500 text-transparent py-2 bg-clip-text group-hover:text-white duration-500 text-sm sm:text-lg">
+                        <h1 className="z-20 py-2 text-sm font-semibold text-transparent duration-500 font-Poppins bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text group-hover:text-white sm:text-lg">
                           {event.title}
                         </h1>
                       </div>
