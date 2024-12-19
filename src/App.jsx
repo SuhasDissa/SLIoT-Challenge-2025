@@ -13,10 +13,10 @@ const App = () => {
       // Valeur entre 0 et 1
       // Valeur par défaut : 0,1
       // Plus la valeur est faible, plus le scroll sera fluide
-      lerp: 0.2, 
+      lerp: 0.5, 
       // Valeur par défaut : 1
       // Plus la valeur est haute, plus le défilement sera rapide 
-      wheelMultiplier: 1, 
+      // wheelMultiplier: 1, 
     });
     function raf(time) {
         lenis.raf(time)
@@ -25,10 +25,10 @@ const App = () => {
 
     requestAnimationFrame(raf)
 },[])
-
+// 
   return (
     <>
-      <div className="flex flex-col min-h-screen pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+      <div className="flex flex-col min-h-screen bg-transparent pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Loader />
         <Header />
         <div className="flex-grow">
