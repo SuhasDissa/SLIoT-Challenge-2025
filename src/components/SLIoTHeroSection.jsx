@@ -6,7 +6,7 @@ import {motion} from "framer-motion"
 const SLIoTHeroSection = () => {
   return (
     <section
-      className="relative flex flex-col items-center justify-center gap-4 px-4 antialiased md:flex-row md:px-6 lg:px-12 lg:gap-0"
+      className="flex flex-col md:flex-row items-center justify-center px-4 md:px-6 lg:px-[8%] gap-4 lg:gap-0 relative antialiased"
       style={{ fontFamily: "Arial, sans-serif" }}
     >
       <BackgroundBeams className="absolute top-0 left-0 w-full h-full -z-40" />
