@@ -9,7 +9,7 @@ const SLIoTHeroSection = () => {
       className="flex flex-col md:flex-row items-center justify-center px-4 md:px-6 lg:px-[8%] gap-4 lg:gap-0 relative antialiased"
       style={{ fontFamily: "Arial, sans-serif" }}
     >
-      <BackgroundBeams className="absolute top-0 left-0 w-full h-full -z-40" />
+      {/* <BackgroundBeams className="absolute top-0 left-0 w-full h-full -z-40" /> */}
       <div className="container flex flex-col items-center mx-auto md:flex-row">
         <div className="text-center md:text-left">
           <div className="p-4 md:p-6">
