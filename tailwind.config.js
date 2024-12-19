@@ -243,6 +243,14 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      grow: {
+        from: {
+          width: "0",
+        },
+        to: {
+          width: "80%",
+        }
+      },
     },
     screens: {
       'xxs': '400px',

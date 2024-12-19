@@ -6,7 +6,7 @@ import { BackgroundBeams } from "./ui/background-beams";
 const SLIoTHeroSection = () => {
   return (
     <section
-      className="flex flex-col md:flex-row items-center justify-center px-4 md:px-6 lg:px-12 gap-4 lg:gap-0 relative antialiased"
+      className="flex flex-col md:flex-row items-center justify-center px-4 md:px-6 lg:px-[8%] gap-4 lg:gap-0 relative antialiased"
       style={{ fontFamily: "Arial, sans-serif" }}
     >
       <BackgroundBeams className="absolute top-0 left-0 w-full h-full -z-10" />
