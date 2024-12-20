@@ -68,21 +68,21 @@ export const CardCarousel = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 w-screen overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] glass-card flex flex-wrap justify-center items-center gap-12 sm:gap-20 py-8  bg-gradient-to-r from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(255,255,255,0.2)] bg-white bg-opacity-10",
+        "scroller relative z-20 w-screen overflow-hidden",
         className
       )}
     >
       <ul
         ref={scrollerRef}
         className={cn(
-          "flex min-w-full shrink-0 gap-36 py-4 w-max flex-nowrap justify-center items-center",
+          "flex min-w-full shrink-0 gap-16 md:gap-32 py-4 w-max flex-nowrap justify-center items-center",
           start && "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
         {items.map((item, idx) => (
           <li
-            className="relative"
+            className="relative border flex border-slate-800 p-6 md:p-12 min-h-64 md:min-h-72 rounded-xl shadow-xl justify-center items-center"
             key={idx}
           >
               <div className="relative z-20 flex items-center justify-center">

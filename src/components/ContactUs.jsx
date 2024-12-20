@@ -11,7 +11,7 @@ const ContactUs = () => {
         <div className="flex flex-col md:flex-row justify-center items-center w-full md:gap-15 lg:gap-28 md:mt-0">
             <CardContainer className="inter-var">
                 <CardBody
-                    className="rounded-3xl bg-slate-900/[0.8] relative group/card border-white/[0.9] w-full md:max-w-[31rem] lg:max-w-[36rem] h-auto p-6 border shadow-lg shadow-black"
+                    className="rounded-3xl bg-slate-900/[0.8] relative group/card border-slate-800 w-full md:max-w-[31rem] lg:max-w-[36rem] h-auto p-6 border shadow-lg shadow-black"
                     >
                     <CardItem translateZ="100" rotateX={20} rotateZ={-10} className="w-full mt-4 flex justify-center">
                         <img
@@ -39,7 +39,7 @@ const ContactUs = () => {
             </CardContainer>
             <CardContainer className="inter-var">
                 <CardBody
-                    className="rounded-3xl bg-slate-900/[0.8] relative group/card border-white/[0.9] w-full md:max-w-[30rem] lg:max-w-[35rem] h-auto p-6 border shadow-lg shadow-black">
+                    className="rounded-3xl bg-slate-900/[0.8] relative group/card border-slate-800 w-full md:max-w-[30rem] lg:max-w-[35rem] h-auto p-6 border shadow-lg shadow-black">
                     <CardItem translateZ="100" rotateX={20} rotateZ={-10} className="w-full mt-4 flex justify-center">
                         <img
                         src={uom}
