@@ -440,12 +440,12 @@ export const organizers = [
   {
     id: 2,
     img: cse,
-    className: "w-52",
+    className: "w-36",
   },
   {
     id: 3,
     img: sltLogo,
-    className: "w-60",
+    className: "w-36",
   },
   {
     id: 4,
