@@ -3,6 +3,7 @@ import "./prizes.scss";
 import { first, second, third } from "../../assets";
 import { categories } from "@/constants";
 import { Button } from "../ui/MovingBorders";
+import { motion } from "framer-motion";
 
 const Prizes = () => {
   const [category, setCategory] = React.useState("school");
@@ -23,7 +24,15 @@ const Prizes = () => {
 
   return (
     <div className="mt-20 w-full mx-auto text-white body-container" id="categories">
-      <h1 className="text-5xl text-center">PRIZES</h1>
+      <motion.h2
+      initial={{opacity:0,y:50}}
+      whileInView={{opacity:1, y:0,  
+      transition: {
+        duration: 2 
+      }}}
+      className="text-5xl text-center">
+        PRIZES
+      </motion.h2>
 
       <div className="flex flex-col md:flex-row w-full items-center justify-center gap-10 mt-10 px-[5%]">
         {categories.map((card) => (

@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { CardCarousel } from "./ui/CardCarousel";
 import { organizers } from "@/constants";
+import { motion } from "framer-motion";
 
 const EventOrganizers = () => {
     useEffect(() => {
@@ -17,9 +18,15 @@ const EventOrganizers = () => {
             <div className=" text-white  py-12 text-center w-full px-[5%] lg:px-[4%] xl:px-[10%] mx-auto">
                 <div className="lg:flex gap-10 h-max items-center ">
                     <div className="items-center">
-                        <h1 className="text-4xl text-white sm:text-5xl font-poppins uppercase mb-6">
+                        <motion.h2
+                        initial={{opacity:0,x:50}}
+                        whileInView={{opacity:1, x:0,  
+                        transition: {
+                            duration: 2 
+                        }}} 
+                        className="text-4xl text-white sm:text-5xl font-poppins uppercase mb-6">
                             Event <span className="text-[#c20c8a]">Organizers</span> 
-                        </h1>
+                        </motion.h2>
                     </div>
                     <div className="max-w-full mx-auto text-lg leading-relaxed text-start">
                         <p>
