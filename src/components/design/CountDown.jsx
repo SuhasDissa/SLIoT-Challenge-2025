@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import { useAnimate } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import MagicButton from '../ui/MagicButton';
 
 // NOTE: Change this date to whatever date you want to countdown to :)
 const COUNTDOWN_FROM = "2024-12-25";
@@ -56,6 +57,13 @@ const ShiftingCountdown = () => {
         <CountdownItem unit="Minute" text="minutes" />
         <CountdownItem unit="Second" text="seconds" />
       </div>
+
+      <div className="flex mt-5">
+        
+      <MagicButton  title="Register Now" />
+      </div>
+
+
     </div>
   );
 };
