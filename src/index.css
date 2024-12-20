@@ -198,3 +198,27 @@
     @apply flex gap-4 items-center justify-start hover:bg-transparent hover:text-white !important;
   }
 }
+/* WebKit Browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Fully transparent track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent thumb */
+  border: 2px solid #1a1a2e; /* Your website's background color */
+  border-radius: 10px; /* Rounded thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.8); /* Brighter thumb on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color:   rgb(247, 4, 126) rgba(59, 0, 38, 1)  ; /* Thumb visible, track transparent */
+}
