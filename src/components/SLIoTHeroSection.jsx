@@ -8,7 +8,7 @@ const SLIoTHeroSection = () => {
   return (
     <div className="relative overflow-hidden" id="home">
       <div>
-        <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill='white' />
+        <Spotlight className='h-screen -top-40 -left-10 md:-left-32 md:-top-20' fill='white' />
         <Spotlight className='sm:top-10 left-full h-screen sm:w-[50vw]' fill='#FF66CC' />
         <Spotlight className='sm:top-10 md:top-28 left-80 h-screen sm:w-[50vw]' fill='blue' />
       </div>
