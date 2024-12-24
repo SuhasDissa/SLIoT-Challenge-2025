@@ -5,7 +5,7 @@ import TimeLineCard from "../ui/TimeLineCard";
 export default function TimeLine() {
   const events = [
     {
-      date: "10 Dec 2023",
+      date: "26 Dec 2024",
       title: "Registrations Opening (Expression of Interest)",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -13,7 +13,7 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "10 Dec 2023",
+      date: "28 Dec 2024",
       title: "Introductory Session",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -21,23 +21,31 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "17 Dec 2023",
-      title: "Proposal Submission Deadline",
+      date: "To be decided",
+      title: "Open Proposal Submission",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
       isActive: true,
     },
     {
-      date: "22 Dec 2023",
-      title: "Announcement of Elimination Round Winners",
+      date: "20 Jan 2025",
+      title: "Proposal Submission Deadline",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
-      isActive: false,
+      isActive: true,
     },
+    // {
+    //   date: "20 Jan 2023",
+    //   title: "Announcement of Elimination Round Winners",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
+    //   imgSrc: "assets/3.png",
+    //   isActive: false,
+    // },
     {
-      date: "13 Jan 2024",
+      date: "24 Jan 2025",
       title: "School Category Workshop",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -45,48 +53,48 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "20 Jan 2024",
-      title: "Progress Evaluation Deadline",
+      date: "03 Feb 2025",
+      title: "University & Open Category Workshop",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
       isActive: false,
     },
     {
-      date: "25 Jan 2024",
-      title: "Announcing semi-finalists",
+      date: "07 Feb 2025",
+      title: "Progress Evaluation / Video Submission",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
       isActive: false,
     },
     {
-      date: "25 Jan 2025",
-      title: "University and open category workshop",
+      date: "16 Feb 2025",
+      title: "University & Open Category Semifinals",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
       isActive: false,
     },
     {
-      date: "To be decided",
-      title: "Semi Finals",
+      date: "23 Feb 2025",
+      title: "School Category Semifinals",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
       isActive: false,
     },
+    // {
+    //   date: "To be decided",
+    //   title: "Announcing Finalists",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
+    //   imgSrc: "assets/3.png",
+    //   isActive: false,
+    // },
     {
-      date: "To be decided",
-      title: "Announcing Finalists",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
-      imgSrc: "assets/3.png",
-      isActive: false,
-    },
-    {
-      date: "To be decided",
-      title: "Finals",
+      date: "16 Mar 2025",
+      title: "Grand Finale",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
