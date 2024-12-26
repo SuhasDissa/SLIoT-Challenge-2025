@@ -4,6 +4,7 @@ import facebook from "./socials/facebook.svg";
 import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
+import youtube from "./socials/youtube.svg";
 
 import completed from "./completed.png";
 
@@ -59,6 +60,8 @@ import cse from "./cse.jpg";
 import iesl from "./iesl.jpg";
 import uom from "./uom.gif";
 
+import chairman from "./pavan.png";
+
 import bg from "./bg.png";
 
 export {
@@ -68,6 +71,7 @@ export {
   instagram,
   telegram,
   twitter,
+  youtube,
   completed,
   clock_icon,
   house_icon,
@@ -108,5 +112,6 @@ export {
   cse,
   iesl,
   uom,
+  chairman,
   bg,
 };

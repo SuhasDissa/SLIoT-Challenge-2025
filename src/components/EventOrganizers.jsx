@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { CardCarousel } from "./ui/CardCarousel";
 import { organizers } from "@/constants";
+import { motion } from "framer-motion";
 
 const EventOrganizers = () => {
     useEffect(() => {
@@ -17,9 +18,15 @@ const EventOrganizers = () => {
             <div className=" text-white  py-12 text-center w-full px-[5%] lg:px-[4%] xl:px-[10%] mx-auto">
                 <div className="items-center gap-10 lg:flex h-max ">
                     <div className="items-center">
-                        <h1 className="mb-6 text-4xl text-white uppercase sm:text-5xl font-poppins">
-                            Event <span className="text-[#c20c8a]">Organizers</span> 
-                        </h1>
+                        <motion.h2
+                        initial={{opacity:0,x:50}}
+                        whileInView={{opacity:1, x:0,  
+                        transition: {
+                            duration: 2 
+                        }}} 
+                        className="mb-6 text-4xl text-white uppercase sm:text-5xl font-poppins">
+                            Meet the  <span className="text-[#c20c8a]">Organizers</span> 
+                        </motion.h2>
                     </div>
                     <div className="max-w-full mx-auto text-lg leading-relaxed text-start">
                         <p>
@@ -28,7 +35,6 @@ const EventOrganizers = () => {
                         </p>
                         <p className="mt-4">
                         The University of Moratuwa is one of Sri Lanka’s premier universities, recognized for excellence in education, research and innovation. Among its faculties, the Department of Computer Science & Engineering within the Faculty of Engineering stands out as a leader in offering world-class education and producing highly skilled professionals in the field of Computer Science and Engineering.
-
                         </p>
                         <p className="mt-4">
                         SLT-MOBITEL is Sri Lanka’s leading digital service provider and the nation’s top broadband and backbone infrastructure services provider. With a commitment to advancing digital transformation, SLT-MOBITEL plays a vital role in empowering the nation through innovative solutions. For more details, visit{" "}
@@ -37,6 +43,7 @@ const EventOrganizers = () => {
                                 sltmobitel.lk
                             </a>.
                         </p>
+
                         <p className="mt-4">
                         The Institution of Engineers Sri Lanka (IESL) is the professional body for engineers in Sri Lanka, dedicated to promoting the advancement of engineering practices and contributing to national development. Their support underscores the importance of bridging engineering and innovation for societal benefit.
 

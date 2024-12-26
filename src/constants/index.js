@@ -3,6 +3,7 @@ import {
   instagram,
   telegram,
   facebook,
+  youtube,
   house_icon,
   clock_icon,
   SLIoT2023_1,
@@ -41,6 +42,7 @@ import {
   cse,
   iesl,
   sltLogo,
+  chairman,
 } from "../assets";
 
 export const navigation = [
@@ -93,12 +95,12 @@ export const navigation = [
 ];
 
 export const socials = [
-  {
-    id: "0",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
-  },
+  // {
+  //   id: "0",
+  //   title: "Twitter",
+  //   iconUrl: twitter,
+  //   url: "#",
+  // },
   {
     id: "1",
     title: "Instagram",
@@ -107,15 +109,15 @@ export const socials = [
   },
   {
     id: "2",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
+    title: "YouTube",
+    iconUrl: youtube,
+    url: "https://www.youtube.com/@SLIOT-Challenge",
   },
   {
     id: "3",
     title: "Facebook",
     iconUrl: facebook,
-    url: "#",
+    url: "https://web.facebook.com/srilankaIoTchallenge",
   },
 ];
 
@@ -123,11 +125,20 @@ export const aboutGridItems = [
   {
     id: 1,
     title: "What is the SLIoT Challenge?",
-    description: `The SLIoT Challenge 2025 is a prestigious annual competition focused on the Internet of Things (IoT), organized by the Department of Computer Science & Engineering, University of Moratuwa, in collaboration with SLT-MOBITEL and The Institution of Engineers Sri Lanka (IESL).
-This competition aims to increase awareness and adoption of IoT technologies among Sri Lankans while fostering innovation and problem-solving skills. By encouraging participants to develop IoT solutions that meet industrial standards, the challenge addresses pressing global issues and showcases the potential of IoT to transform industries and communities.
-We inspire the participants to create innovative, impactful and technologically advanced solutions. Projects will be evaluated on creativity, value, benefits and the technologies utilized. The most outstanding ideas and performances will be rewarded on the event day.
-The competition offers opportunities for the participants from three categories: - School Category - Undergraduate Category - Open Category.
-`,
+
+    description: `The SLIoT Challenge 2025 is an annual IoT competition organized by the Department of Computer Science & Engineering, University of Moratuwa, in collaboration with SLT-MOBITEL and The Institution of Engineers Sri Lanka (IESL).
+
+The goal of this competition is to raise awareness about the "Internet of Things" (IoT) and encourage its usage among Sri Lankans.
+
+The organizers aim to evaluate IoT-based solutions developed to meet industrial-level standards, addressing major global issues. Each year, a theme is announced to define the problem scenario.
+
+We aspire to ignite imagination and creativity by providing a competitive platform for talented and curious participants. Ideas will be evaluated based on creativity, value, benefits, and technologies used. Winners will be selected from the best ideas and performance on the event day.
+
+The competition will be held in three categories: 
+- School Category 
+- Undergraduate Category 
+- Open Category.`,
+
     className:
       "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] text-n-1",
     imgClassName: "",
@@ -148,7 +159,7 @@ The competition offers opportunities for the participants from three categories:
   {
     id: 3,
     title: "When",
-    description: `Grand Finale: 23 rd March 2024 <br> Check the Timeline for more details `,
+    description: `Grand Finale: 23 rd March 2025 <br> Check the Timeline for more details `,
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 text-n-1",
     imgClassName: "mt-5 ml-5 h-20 w-20",
     titleClassName: "justify-end items-end text-end",
@@ -337,7 +348,7 @@ export const spotlight = [
   {
     id: 1,
     title: "What is IoT?",
-    des: "Explained by Prof. Chandana Gamage",
+    des: "Explained by Prof. Chandana Gamage | SLIoT Challenge 2025",
     des2: "SLIoT Challenge 2025",
     img: "/p1.svg",
     link: "https://www.youtube.com/embed/mIJdCAKL71I",
@@ -352,7 +363,7 @@ export const spotlight = [
   {
     id: 3,
     title: "How to start an IoT Project?",
-    des: "Explained by Dr. Kutila Gunasekara",
+    des: "Explained by Dr. Kutila Gunasekara | SLIoT Challenge 2025",
     des2: "SLIoT Challenge 2025",
     img: "/p3.svg",
     link: "https://www.youtube.com/embed/vVw2Q92ydsc",
@@ -360,7 +371,7 @@ export const spotlight = [
   {
     id: 4,
     title: "Communication between Embedded Devices",
-    des: "Explained by Dr. Sulochana Sooriyaarachchi",
+    des: "Explained by Dr. Sulochana Sooriyaarachchi | SLIoT Challenge 2025",
     des2: "SLIoT Challenge 2025",
     img: "/p4.svg",
     link: "https://www.youtube.com/embed/eiyhMLFVdMU",
@@ -368,7 +379,7 @@ export const spotlight = [
   {
     id: 5,
     title: "Value of Security for IoT Solutions",
-    des: "Explained by Dr. Sunimal Rathnayaka",
+    des: "Explained by Dr. Sunimal Rathnayaka | SLIoT Challenge 2025",
     des2: "SLIoT Challenge 2025",
     img: "/p1.svg",
     link: "https://www.youtube.com/embed/Gw6NmLdHqiA",
@@ -376,7 +387,7 @@ export const spotlight = [
   {
     id: 6,
     title: "Applications of IoT",
-    des: "Explained by Prof. Chandana Gamage",
+    des: "Explained by Prof. Chandana Gamage | SLIoT Challenge 2025",
     des2: "SLIoT Challenge 2025",
     img: "/p2.svg",
     link: "https://www.youtube.com/embed/LJnJDyBk4_4",
@@ -384,15 +395,15 @@ export const spotlight = [
   {
     id: 7,
     title: "IOT Sensors",
-    des: "Explained by Dr. Chathuranga Hettiarachchi",
+    des: "Explained by Dr. Chathuranga Hettiarachchi | SLIoT Challenge 2025",
     des2: "SLIoT Challenge 2025",
     img: "/p3.svg",
     link: "https://www.youtube.com/embed/MHwnCB3-kzA",
   },
   {
     id: 8,
-    title: "what is AIOT?",
-    des: "Explained By Dr. Thanuja Ambegoda",
+    title: "What is AIOT?",
+    des: "Explained By Dr. Thanuja Ambegoda | SLIoT Challenge 2025",
     des2: "SLIoT Challenge 2025",
     img: "/p4.svg",
     link: "https://www.youtube.com/embed/UVdn4ZTJ3_Q",
@@ -446,3 +457,22 @@ export const organizers = [
     className: "w-36",
   },
 ]; 
+
+export const contact = [
+  {
+    id: 1,
+    img: chairman,
+    name: "Pavan Epa",
+    position: "Event Chairman",
+    link: "mailto:pavan.22@cse.mrt.ac.lk",
+    mail: "pavan.22@cse.mrt.ac.lk",
+  },
+  {
+    id: 2,
+    img: chairman,
+    name: "Kaveesha Kapuruge",
+    position: "Event Vice Chairman",
+    link: "mailto:kaveesha.22@cse.mrt.ac.lk",
+    mail: "kaveesha.22@cse.mrt.ac.lk",
+  },
+];

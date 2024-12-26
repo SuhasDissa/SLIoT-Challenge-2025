@@ -2,11 +2,20 @@ import React from "react";
 import { PinContainer } from "./ui/3d-pin";
 import { spotlight } from "@/constants";
 import { bg } from "@/assets";
+import { motion } from "framer-motion";
 
 const Spotlight = () => {
   return (
     <div className="w-full justify-center items-center text-n-1 mt-20" id="spotlight">
-      <h2 className="text-4xl text-white sm:text-5xl font-poppins text-center">SLIoT IN THE SPOTLIGHT</h2>
+      <motion.h2
+      initial={{opacity:0,y:50}}
+      whileInView={{opacity:1, y:0,  
+      transition: {
+        duration: 2 
+      }}} 
+      className="text-4xl text-white sm:text-5xl font-poppins text-center">
+        SLIoT IN THE SPOTLIGHT
+      </motion.h2>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
         {spotlight.map(({ id, title, des, des2, img, link }) => (
           <div
