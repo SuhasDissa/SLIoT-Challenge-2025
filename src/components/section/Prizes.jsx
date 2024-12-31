@@ -10,9 +10,9 @@ const Prizes = () => {
   const [categoryChange, setCategoryChange] = React.useState(false);
 
   const prizes = {
-    school: ["LKR 15,000", "LKR 10,000", "LKR 7,000"],
-    university: ["LKR 25,000", "LKR 15,000", "LKR 10,000"],
-    open: ["LKR 25,000", "LKR 15,000", "LKR 10,000"],
+    school: ["LKR 100,000", "LKR 50,000", "LKR 30,000"],
+    university: ["LKR 150,000", "LKR 100,000", "LKR 50,000"],
+    open: ["LKR 150,000", "LKR 100,000", "LKR 50,000"],
   }
 
   const changeCategory = (category) => {

@@ -13,7 +13,7 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "28 Dec 2024",
+      date: "05 Jan 2025",
       title: "Introductory Session",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -21,7 +21,7 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "To be decided",
+      date: "08 Jan 2025",
       title: "Open Proposal Submission",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",

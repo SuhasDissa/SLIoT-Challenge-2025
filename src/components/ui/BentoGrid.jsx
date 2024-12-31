@@ -114,7 +114,7 @@ export const BentoGridItem = ({
           <div className="font-sans font-semibold text-lg lg:text-3xl max-w-96 z-5 text-n-1">
             {title}
           </div>
-          <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-5 mt-2">
+          <div className="font-sans font-extralight text-white text-sm md:text-xs lg:text-base z-5 mt-2">
             {renderDescription(description)}
           </div>
 
