@@ -64,19 +64,19 @@ const SLIoTHeroSection = () => {
               animate={{opacity:1, y:0,type:'spring'}}
               transition={{duration:0.5,delay:4,ease:'anticipate'}}
               className="text-center md:text-left">
-                <motion.div
+                <div
                   initial={{ scale: 1 }}
                   whileTap={{ scale: 0.9 }}
                   transition={{ duration: 0.2 }}
                   className="relative inline-block"
                 >
                   <div className="absolute inset-0 translate-x-1 translate-y-1 border-2 border-gray-400 lg:translate-y-2 lg:translate-x-2 rounded-xl"></div>
-                  <a href="https://forms.gle/7Z8Q6Z8Q7Z8Q6Z8Q7" target='_blank' className="z-20">
+                  <a href="https://bit.ly/sliot2025-register" target='_blank' className="z-20">
                     <button className="relative z-10 px-4 py-2 text-base text-white transition duration-300 shadow-lg sm:px-8 lg:px-4 lg:py-3 lg:text-lg font-nicoMoji rounded-xl bg-gradient-to-r from-pink-500 to-purple-600">
                       Register Now
                     </button>
                   </a>
-                </motion.div>
+                </div>
               </motion.div>
               <div className="relative flex items-end justify-center gap-6 mt-6 md:justify-end md:mt-10 lg:-mt-10 md:gap-10">
                 <div

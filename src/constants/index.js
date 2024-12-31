@@ -125,7 +125,7 @@ export const aboutGridItems = [
 
 The goal of this competition is to raise awareness about the "Internet of Things" (IoT) and encourage its usage among Sri Lankans.
 
-The organizers aim to evaluate IoT-based solutions developed to meet industrial-level standards, addressing major global issues. Each year, a theme is announced to define the problem scenario.
+The organizers aim to evaluate IoT-based solutions developed to meet industrial-level standards, addressing major global issues.
 
 We aspire to ignite imagination and creativity by providing a competitive platform for talented and curious participants. Ideas will be evaluated based on creativity, value, benefits, and technologies used. Winners will be selected from the best ideas and performance on the event day.
 
@@ -154,7 +154,7 @@ The competition will be held in three categories:
   {
     id: 3,
     title: "When",
-    description: `Grand Finale: 23 rd March 2025 <br> Check the Timeline for more details `,
+    description: `To be decided <br> Check the Timeline for more details `,
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 text-n-1",
     imgClassName: "mt-5 ml-5 h-20 w-20",
     titleClassName: "justify-end items-end text-end",
