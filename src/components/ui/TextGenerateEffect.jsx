@@ -21,7 +21,7 @@ export const TextGenerateEffect = ({
       },
       {
         duration: duration || 1,
-        delay: stagger(0.2),
+        delay: stagger(0.1),
       }
     );
   }, [scope.current]);
