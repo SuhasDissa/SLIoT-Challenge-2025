@@ -191,7 +191,7 @@ export const guidelines = [
     description: "",
     descriptionItems: [
       "Language of Use - English.",
-      "Make a Copy of the Proposal template and fill your details in the necessary slides.",
+      "Download the Proposal template and fill your details in the necessary slides.",
       "The proposal content should not exceed 06 pages.",
       'The proposal should be named "[Team Name]_proposal".',
       'Teams must ensure that their proposal in pdf format.',

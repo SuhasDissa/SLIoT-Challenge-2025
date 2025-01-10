@@ -101,7 +101,7 @@ const SubmissionGuidelines = () => {
             duration: 2 
         }}} 
         className="mt-10 text-4xl text-center text-white sm:text-5xl font-poppins md:my-10">
-          Download Tempaltes
+          Download Templates
       </motion.h2>
 
 
