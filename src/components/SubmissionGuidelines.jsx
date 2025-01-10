@@ -101,7 +101,7 @@ const SubmissionGuidelines = () => {
             duration: 2 
         }}} 
         className="mt-10 text-4xl text-center text-white sm:text-5xl font-poppins md:my-10">
-          Download PDFs
+          Download Tempaltes
       </motion.h2>
 
 
@@ -179,9 +179,9 @@ const SubmissionGuidelines = () => {
     </div>
 
       <div className="flex flex-col md:flex-row md:gap-8">
-        <DownloadPDFButton link="/SLIoT_Challenge_2025_Project_Proposal_Template.pdf" title="Project Proposal Template" download="SLIoT_Challenge_2025_Project_Proposal_Template" />
-        <DownloadPDFButton link="/SLIoT_Challenge_2025_Sample_Project_Proposal_01.pdf" title="Sample Project Proposal 01" download="SLIoT_Challenge_2025_Sample_Project_Proposal_01" />
-        <DownloadPDFButton link="/SLIoT_Challenge_2025_Sample_Project_Proposal_02.pdf" title="Sample Project Proposal 02" download="SLIoT_Challenge_2025_Sample_Project_Proposal_02" />
+        <DownloadPDFButton link="/SLIoT Challenge - 2025 Project Proposal Template.docx" title="Project Proposal Template" download="SLIoT_Challenge_2025_Project_Proposal_Template" />
+        <DownloadPDFButton link="/SLIoT Challenge - 2025 Sample Project Proposal 01.docx" title="Sample Project Proposal 01" download="SLIoT_Challenge_2025_Sample_Project_Proposal_01" />
+        <DownloadPDFButton link="/SLIoT Challenge - 2025 Sample Project Proposal 02.docx" title="Sample Project Proposal 02" download="SLIoT_Challenge_2025_Sample_Project_Proposal_02" />
       </div>
       
       <a
