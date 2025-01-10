@@ -9,5 +9,9 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+
+  
+
+  
   base: '/', // Use '/' for root deployment or '/subdir/' for subdirectory deployment
 });

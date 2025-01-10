@@ -184,15 +184,27 @@ const SubmissionGuidelines = () => {
         <DownloadPDFButton link="/SLIoT Challenge - 2025 Sample Project Proposal 02.docx" title="Sample Project Proposal 02" download="SLIoT_Challenge_2025_Sample_Project_Proposal_02" />
       </div>
       
-      <a
+      {/* <a
         className="mt-4"
-        href="/SLIOT Challenge 2025 - Rules and Regulations.pdf"
+        href="/rulesandregulation"
         target="_blank"
   rel="noopener noreferrer"
-  download
+
   aria-label="Download guidelines"
       >
         <MagicButton title="Rules and Regulations" />
+      </a> */}
+
+
+      <a
+        className="mt-4"
+        href="https://forms.gle/3Hhpjj3iW6u2YSLB6"
+        target="_blank"
+  rel="noopener noreferrer"
+
+  aria-label="Download guidelines"
+      >
+        <MagicButton title="Submit Your Proposal" />
       </a>
     </div>
     </>
