@@ -198,7 +198,7 @@ const SubmissionGuidelines = () => {
 
       <a
         className="mt-4"
-        href="https://forms.gle/3Hhpjj3iW6u2YSLB6"
+        href="https://forms.gle/MD9WLWwD2fPFLCPY8"
         target="_blank"
   rel="noopener noreferrer"
 
