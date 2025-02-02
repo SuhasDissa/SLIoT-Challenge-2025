@@ -29,7 +29,7 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "31 January 2025 (Will be extended)",
+      date: "16 February 2025",
       title: "Proposal Submission Deadline",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",

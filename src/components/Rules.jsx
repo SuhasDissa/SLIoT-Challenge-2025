@@ -57,11 +57,11 @@ const FAQs = () => {
     {
       title: "How can I register my team and submit the proposal?",
       content: "You can register your team and submit the proposal through the following link.",
-      link: "https://tinyurl.com/SLIoT-Proposal"
+      link: "https://forms.gle/MD9WLWwD2fPFLCPY8"
     },
     {
       title: "What is the deadline for proposal submission?",
-      content: "The deadline for proposal submission is January 31st."
+      content: "The new deadline for proposal submission is February 16th."
     },
     {
       title: "Is there a specific theme for this year's competition?",
