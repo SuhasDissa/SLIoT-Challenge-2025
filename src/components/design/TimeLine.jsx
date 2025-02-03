@@ -46,7 +46,7 @@ export default function TimeLine() {
     // },
     {
       date: "23 February 2025",
-      title: "University & Open Category Workshop",
+      title: "School Category Workshop",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
@@ -54,7 +54,7 @@ export default function TimeLine() {
     },
     {
       date: "02 March 2025",
-      title: "School Category Workshop",
+      title: "University & Open Category Workshop",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
