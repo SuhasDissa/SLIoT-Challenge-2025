@@ -45,15 +45,25 @@ export default function TimeLine() {
     //   isActive: false,
     // },
     {
-      date: "Start of February",
+      date: "23 Feb 2025",
       title: "School Category Workshop",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
       isActive: false,
     },
+   
+    
     {
-      date: "Start of February",
+      date: "23 Feb 2025",
+      title: "Video Submission open for All Categories",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
+      imgSrc: "assets/3.png",
+      isActive: false,
+    },
+    {
+      date: "02 March 2025",
       title: "University & Open Category Workshop",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -61,24 +71,32 @@ export default function TimeLine() {
       isActive: false,
     },
     {
-      date: "2nd Week of February",
-      title: "Progress Evaluation / Video Submission",
+      date: "03 March 2025",
+      title: "School Video Submission closes",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
       isActive: false,
     },
     {
-      date: "3rd Week of February",
-      title: "University & Open Category Semifinals",
+      date: "07 March 2025",
+      title: "open/university Video Submission closes",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
       isActive: false,
     },
     {
-      date: "End of February",
-      title: "School Category Semifinals",
+      date: "15 March 2025",
+      title: "University & Open Category Semifinals(physical)",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
+      imgSrc: "assets/3.png",
+      isActive: false,
+    },
+    {
+      date: "16 March 2025",
+      title: "School Category Semifinals(online)",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
@@ -93,7 +111,7 @@ export default function TimeLine() {
     //   isActive: false,
     // },
     {
-      date: "2nd Week of March",
+      date: "29 March 2025",
       title: "Grand Finale",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
