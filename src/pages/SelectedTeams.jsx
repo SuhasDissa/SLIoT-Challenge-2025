@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import GuilineHeader from '@/components/GuideLineHeader';
+import { useState } from 'react';
+import { motion } from "framer-motion";
 
 const SelectedTeams = () => {
   const [activeTab, setActiveTab] = useState('school');
@@ -89,6 +91,15 @@ const SelectedTeams = () => {
 
   return (
     <div className="max-w-7xl mx-auto p-5">
+      <GuilineHeader />
+      <motion.h2
+          initial={{opacity:0, y:50}}
+          whileInView={{opacity:1, y:0}}
+          transition={{ duration: 1 }}
+          className="mb-12 text-3xl font-bold text-center text-white md:text-4xl"
+        >
+          Selected Teams
+        </motion.h2>
       {/* Tabs */}
       <div className="flex space-x-1 mb-5">
         <button
