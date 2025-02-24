@@ -1,0 +1,58 @@
+"use client";
+import { useEffect } from "react";
+import { motion, stagger, useAnimate } from "framer-motion";
+import { cn } from "../../../utils/cn";
+
+export const TextGenerateEffect = ({
+  words,
+  className,
+  filter = true,
+  duration = 0.5,
+}) => {
+  const [scope, animate] = useAnimate();
+  const wordsArray = words.split(" ");
+
+  useEffect(() => {
+    animate(
+      "span",
+      {
+        opacity: 1,
+        filter: filter ? "blur(0px)" : "none",
+      },
+      {
+        duration: duration || 1,
+        delay: stagger(0.1),
+      }
+    );
+  }, [scope.current]);
+
+  const renderWords = () => {
+    return (
+      <motion.div ref={scope}>
+        {wordsArray.map((word, idx) => (
+          <motion.span
+            key={word + idx}
+            className={`${
+              idx > 0 && idx < 3 ? "text-2xl xs:text-4xl text-pink-500 lg:text-5xl font-nicoMoji leading-none" : "text-7xl tracking-wide text-transparent md:text-7xl lg:text-8xl font-nicoMoji bg-clip-text bg-gradient-to-b from-[#e5e5e5] to-[#a3a3a3]"
+            } opacity-0`}
+            style={{
+              filter: filter ? "blur(10px)" : "none",
+            }}
+          >
+            {word}{" "}
+          </motion.span>
+        ))}
+      </motion.div>
+    );
+  };
+
+  return (
+    <div className={cn("font-semibold text-5xl text-left", className)}>
+      <div className="my-4">
+        <div className="leading-snug text-black dark:text-white">
+          {renderWords()}
+        </div>
+      </div>
+    </div>
+  );
+};

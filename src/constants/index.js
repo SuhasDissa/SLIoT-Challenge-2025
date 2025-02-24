@@ -3,6 +3,7 @@ import {
   instagram,
   telegram,
   facebook,
+  youtube,
   house_icon,
   clock_icon,
   SLIoT2023_1,
@@ -37,145 +38,97 @@ import {
   sliot2019_9,
   sliot2019_10,
   sliot2019_11,
+  uom,
+  cse,
+  iesl,
+  sltLogo,
+  chairman,
+  viceChairman,
 } from "../assets";
 
 export const navigation = [
   {
-    id: "0",
-    title: "Home",
-    url: "/",
-  },
-  {
     id: "1",
-    title: "Industry4.0",
-    url: "/industry4.0",
+    title: "Home",
+    url: "home",
   },
   {
     id: "2",
     title: "About",
-    url: "/about",
+    url: "about",
   },
   {
     id: "3",
     title: "Categories",
-    url: "/categories",
+    url: "categories",
   },
   {
     id: "4",
     title: "Challenge",
-    url: "/challenge",
-    onlyMobile: true,
+    url: "challenge",
   },
    {
     id: "5",
     title: "Timeline",
-    url: "/timeline",
+    url: "timeline",
    },
   {
     id: "6",
     title: "Gallery",
-    url: "/gallery",
+    url: "gallery",
   },
   {
     id: "7",
     title: "Spotlight",
-    url: "/spotlight",
+    url: "spotlight",
   },
   {
     id: "8",
     title: "Partners",
-    url: "/partners",
+    url: "partners",
+  },
+  {
+    id: "9",
+    title: "FAQs",
+    url: "/faqs",
+    isExternal: true,
+  },
+  {
+    id: "10",
+    title: "Contact",
+    url: "contact",
+    onlyMobile: true,
   },
 ];
-
-export const heroIcons = [];
-
-export const notificationImages = [];
-
-export const companyLogos = [];
-
-export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
-
-export const collabContent = [
-  {
-    id: "0",
-    title: "$10 Million in Public Liability Insurance",
-  },
-  {
-    id: "1",
-    title: "Flexible Pick-up and Delivery options",
-  },
-  {
-    id: "2",
-    title: "On-site supervision available",
-  },
-  {
-    id: "3",
-    title: "Design and Build service for custom courses",
-  },
-  {
-    id: "4",
-    title:
-      "Portable fencing, scorecards, pencils, and golfer certificates provided",
-  },
-];
-
-export const collabApps = [];
-
-export const pricing = [];
-
-export const benefits = [];
-
-export const special_benefits = [];
 
 export const socials = [
-  {
-    id: "0",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
-  },
+  // {
+  //   id: "0",
+  //   title: "Twitter",
+  //   iconUrl: twitter,
+  //   url: "#",
+  // },
   {
     id: "1",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
+    title: "YouTube",
+    iconUrl: youtube,
+    url: "https://www.youtube.com/@SLIOT-Challenge",
   },
   {
     id: "2",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
-  },
-  {
-    id: "3",
     title: "Facebook",
     iconUrl: facebook,
-    url: "#",
+    url: "https://web.facebook.com/srilankaIoTchallenge",
   },
 ];
-
-export const topbarLinks = [];
-
-export const paymentmethods = [];
 
 export const aboutGridItems = [
   {
     id: 1,
     title: "What is the SLIoT Challenge?",
-    description: `The SLIoT Challenge 2023 is an annual IoT competition organized by the Department of Computer Science & Engineering, University of Moratuwa, in collaboration with SLT-MOBITEL and The Institution of Engineers Sri Lanka (IESL).
 
-The goal of this competition is to raise awareness about the "Internet of Things" (IoT) and encourage its usage among Sri Lankans.
+    description: `The SLIoT Challenge is an annual IoT competition organized by the Department of Computer Science & Engineering, University of Moratuwa, in collaboration with SLT-MOBITEL and The Institution of Engineers Sri Lanka (IESL). The goal of this competition is to raise awareness about the "Internet of Things" (IoT) and encourage its usage among Sri Lankans. The organizers aim to evaluate IoT-based solutions developed to meet industrial-level standards, addressing major local and global issues. We aspire to ignite imagination and creativity by providing a competitive platform for talented and curious participants. Ideas will be evaluated based on creativity, value, benefits, and technologies used. Winners will be selected from the best ideas and performance on the event day. The competition will be held in three categories: School, Undergraduate and Open.`,
 
-The organizers aim to evaluate IoT-based solutions developed to meet industrial-level standards, addressing major global issues. Each year, a theme is announced to define the problem scenario.
-
-We aspire to ignite imagination and creativity by providing a competitive platform for talented and curious participants. Ideas will be evaluated based on creativity, value, benefits, and technologies used. Winners will be selected from the best ideas and performance on the event day.
-
-This year's theme is *Industry 4.0*, and the competition will be held in three categories: 
-- School Category 
-- Undergraduate Category 
-- Open Category.`,
     className:
       "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] text-n-1",
     imgClassName: "",
@@ -196,11 +149,64 @@ This year's theme is *Industry 4.0*, and the competition will be held in three c
   {
     id: 3,
     title: "When",
-    description: `Grand Finale: 23 rd March 2024 <br> Check the Timeline for more details `,
+    description: `Registrations Open <br> Check the Timeline for more details `,
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 text-n-1",
     imgClassName: "mt-5 ml-5 h-20 w-20",
     titleClassName: "justify-end items-end text-end",
     img: clock_icon,
+    spareImg: "",
+  },
+];
+
+export const guidelines = [
+  {
+    id: 21,
+    title: "What is This Stage?",
+    description: "",
+    descriptionItems: [
+      "Each team should pitch their idea as a proposal in this stage.",
+      "Teams with approved proposals will go to the next stage and should start developing their solution.",
+      "Workshops will be conducted to empower the teams."
+    ],
+    className:
+      "col-span-6 text-n-1",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 22,
+    title: "Proposal Template",
+    description: "",
+    descriptionItems: [
+      "The proposal must be created according to the given template.",
+      "A panel of judges will shortlist the teams based on the proposals.",
+      "The participants will be shortlisted separately for school,university and open categories."
+    ],
+    className:
+      "col-span-6 text-n-1",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 23,
+    title: "Proposal Guidelines",
+    description: "",
+    descriptionItems: [
+      "Language of Use - English.",
+      "Download the Proposal template and fill your details in the necessary slides.",
+      "The proposal content should not exceed 06 pages.",
+      'The proposal should be named "[Team Name]_proposal".',
+      'Teams must ensure that their proposal in pdf format.',
+    ],
+    className:
+      "col-span-6 text-n-1",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "",
     spareImg: "",
   },
 ];
@@ -385,57 +391,131 @@ export const spotlight = [
   {
     id: 1,
     title: "What is IoT?",
-    des: "Explained by Prof. Chandana Gamage | SLIoT Challenge 2025",
+    des: "Explained by Prof. Chandana Gamage | SLIoT Challenge",
+    des2: "SLIoT Challenge 2025",
     img: "/p1.svg",
     link: "https://www.youtube.com/embed/mIJdCAKL71I",
   },
-  {
-    id: 2,
-    title: "What is Industry 4.0?",
-    des: "Explained by Prof. Chandana Gamage | SLIoT Challenge 2025",
-    img: "/p2.svg",
-    link: "https://www.youtube.com/embed/kdI_04VvLmk",
-  },
+  // {
+  //   id: 2,
+  //   title: "What is Industry 4.0?",
+  //   des: "Explained by Prof. Chandana Gamage | SLIoT Challenge 2025",
+  //   img: "/p2.svg",
+  //   link: "https://www.youtube.com/embed/kdI_04VvLmk",
+  // },
   {
     id: 3,
     title: "How to start an IoT Project?",
-    des: "Explained by Dr. Kutila Gunasekara | SLIoT Challenge 2025",
+    des: "Explained by Dr. Kutila Gunasekara | SLIoT Challenge",
+    des2: "SLIoT Challenge 2025",
     img: "/p3.svg",
     link: "https://www.youtube.com/embed/vVw2Q92ydsc",
   },
   {
     id: 4,
     title: "Communication between Embedded Devices",
-    des: "Explained by Dr. Sulochana Sooriyaarachchi | SLIOT Challenge 2025",
+    des: "Explained by Dr. Sulochana Sooriyaarachchi | SLIoT Challenge",
+    des2: "SLIoT Challenge 2025",
     img: "/p4.svg",
     link: "https://www.youtube.com/embed/eiyhMLFVdMU",
   },
   {
     id: 5,
     title: "Value of Security for IoT Solutions",
-    des: "Explained by Dr. Sunimal Rathnayaka | SLIOT Challenge 2025",
+    des: "Explained by Dr. Sunimal Rathnayaka | SLIoT Challenge",
+    des2: "SLIoT Challenge 2025",
     img: "/p1.svg",
     link: "https://www.youtube.com/embed/Gw6NmLdHqiA",
   },
   {
     id: 6,
     title: "Applications of IoT",
-    des: "Explained by Prof. Chandana Gamage | SLIoT Challenge 2025",
+    des: "Explained by Prof. Chandana Gamage | SLIoT Challenge",
+    des2: "SLIoT Challenge 2025",
     img: "/p2.svg",
     link: "https://www.youtube.com/embed/LJnJDyBk4_4",
   },
   {
     id: 7,
     title: "IOT Sensors",
-    des: "Explained by Dr. Chathuranga Hettiarachchi | SLIOT Challenge 2025",
+    des: "Explained by Dr. Chathuranga Hettiarachchi | SLIoT Challenge",
+    des2: "SLIoT Challenge 2025",
     img: "/p3.svg",
     link: "https://www.youtube.com/embed/MHwnCB3-kzA",
   },
   {
     id: 8,
-    title: "what is AIOT?",
-    des: "Explained By Dr. Thanuja Ambegoda | SLIOT Challenge 2025",
+    title: "What is AIOT?",
+    des: "Explained By Dr. Thanuja Ambegoda | SLIoT Challenge",
+    des2: "SLIoT Challenge 2025",
     img: "/p4.svg",
     link: "https://www.youtube.com/embed/UVdn4ZTJ3_Q",
+  },
+];
+
+export const categories = [
+  {
+    id: 1,
+    title: "SCHOOL CATEGORY",
+    category: "school",
+  },
+  {
+    id: 2,
+    title: "UNIVERSITY CATEGORY",
+    category: "university",
+  },
+  {
+    id: 3,
+    title: "OPEN CATEGORY",
+    category: "open",
+  },
+  // {
+  //   id: 4,
+  //   title: "Lead Frontend Developer",
+  //   desc: "Developed and maintained user-facing features using modern frontend technologies.",
+  //   className: "md:col-span-2",
+  //   thumbnail: "/exp4.svg",
+  // },
+];
+
+export const organizers = [
+  {
+    id: 1,
+    img: iesl,
+    className: "w-36",
+  },
+  {
+    id: 2,
+    img: cse,
+    className: "w-36",
+  },
+  {
+    id: 3,
+    img: sltLogo,
+    className: "w-36",
+  },
+  {
+    id: 4,
+    img: uom,
+    className: "w-36",
+  },
+]; 
+
+export const contact = [
+  {
+    id: 1,
+    img: chairman,
+    name: "Pavan Epa",
+    position: "Event Chairman",
+    link: "mailto:pavan.22@cse.mrt.ac.lk",
+    mail: "pavan.22@cse.mrt.ac.lk",
+  },
+  {
+    id: 2,
+    img: viceChairman,
+    name: "Kaveesha Kapuruge",
+    position: "Event Vice Chairman",
+    link: "mailto:kaveesha.22@cse.mrt.ac.lk",
+    mail: "kaveesha.22@cse.mrt.ac.lk",
   },
 ];

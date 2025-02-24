@@ -395,9 +395,9 @@ export function GlobeDemo() {
   return (
     <div className="flex items-center justify-center absolute -left-5 top-36 md:top-40 w-full h-full">
       <div className="max-w-7xl h-96 mx-auto w-full relative overflow-hidden px-4">
-        <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
+        {/* <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" /> */}
         <div className="absolute w-full h-72 md:h-full z-0">
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense>
             <World data={sampleArcs} globeConfig={globeConfig} />
           </Suspense>
         </div>

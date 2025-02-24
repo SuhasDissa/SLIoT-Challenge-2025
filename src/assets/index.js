@@ -1,10 +1,10 @@
 import logo from "./logo.png";
-import downarrow from "./downarrow.png";
 
 import facebook from "./socials/facebook.svg";
 import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
+import youtube from "./socials/youtube.svg";
 
 import completed from "./completed.png";
 
@@ -56,17 +56,26 @@ import sliot2019_11 from "./gallery/SLIoT2019/11.jpg";
 import robot from "./robot.png";
 
 import sltLogo from "./SLT-Mobitel.png"
+import cse from "./cse.jpg";
+import iesl from "./iesl.jpg";
+import uom from "./uom.gif";
+
+import chairman from "./pavan.jpg";
+import viceChairman from "./kaveesha.jpg";
+
+import idea from "./idea.png";
+import point from "./checked.png";
 
 import bg from "./bg.png";
 
 export {
   first, second, third,
   logo,
-  downarrow,
   facebook,
   instagram,
   telegram,
   twitter,
+  youtube,
   completed,
   clock_icon,
   house_icon,
@@ -104,5 +113,12 @@ export {
   sliot2019_11,
   robot,
   sltLogo,
+  cse,
+  iesl,
+  uom,
+  chairman,
+  viceChairman,
+  idea,
+  point,
   bg,
 };

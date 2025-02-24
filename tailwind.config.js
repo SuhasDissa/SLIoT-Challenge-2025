@@ -102,6 +102,7 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         robotoMono: ["'Roboto Mono'", "monospace"],
         nicoMoji: ["'NicoMoji'", "sans-serif"],
+        sans: ['Quattrocento Sans', 'sans-serif'],
       },
       letterSpacing: {
         tagline: ".15em",
@@ -153,8 +154,15 @@ export default {
         third: "moveInCircle 40s linear infinite",
         fourth: "moveHorizontal 40s ease infinite",
         fifth: "moveInCircle 20s ease infinite",
-        scroll:
-          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        blur1: 'blur 1.5s 0s infinite linear alternate',
+        blur2: 'blur 1.5s 0.2s infinite linear alternate',
+        blur3: 'blur 1.5s 0.4s infinite linear alternate',
+        blur4: 'blur 1.5s 0.6s infinite linear alternate',
+        blur5: 'blur 1.5s 0.8s infinite linear alternate',
+        blur6: 'blur 1.5s 1s infinite linear alternate',
+        blur7: 'blur 1.5s 1.2s infinite linear alternate',
+        'fade-up': 'fadeUp 0.895s linear',
       },
       keyframes: {
         pulse: {
@@ -237,12 +245,37 @@ export default {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+        blur: {
+          '0%': { filter: 'blur(0px)' },
+          '100%': { filter: 'blur(4px)' },
+        },
+        fadeUp: {
+          '0%': { opacity: 0, transform: 'translateY(20px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      grow: {
+        from: {
+          width: "0",
+        },
+        to: {
+          width: "80%",
+        }
+      },
+    },
+    screens: {
+      'xxs': '400px',
+      'xs': '500px',
+      'sm': '640px',  // Small screens and above
+      'md': '768px',  // Medium screens and above
+      'lg': '1024px', // Large screens and above
+      'xl': '1280px', // Extra large screens and above
+      '2xl': '1536px', // 2x Extra large screens and above
     },
   },
   plugins: [

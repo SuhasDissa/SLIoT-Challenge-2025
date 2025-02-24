@@ -1,15 +1,18 @@
 import React from "react";
 import "./prizes.scss";
 import { first, second, third } from "../../assets";
+import { categories } from "@/constants";
+import { Button } from "../ui/MovingBorders";
+import { motion } from "framer-motion";
 
 const Prizes = () => {
   const [category, setCategory] = React.useState("school");
   const [categoryChange, setCategoryChange] = React.useState(false);
 
   const prizes = {
-    school: ["LKR 15,000", "LKR 10,000", "LKR 7,000"],
-    university: ["LKR 25,000", "LKR 15,000", "LKR 10,000"],
-    open: ["LKR 25,000", "LKR 15,000", "LKR 10,000"],
+    school: ["LKR 100,000", "LKR 50,000", "LKR 30,000"],
+    university: ["LKR 150,000", "LKR 100,000", "LKR 50,000"],
+    open: ["LKR 150,000", "LKR 100,000", "LKR 50,000"],
   }
 
   const changeCategory = (category) => {
@@ -20,10 +23,42 @@ const Prizes = () => {
   }
 
   return (
-    <div className="mt-10 w-full mx-auto text-white body-container">
-      <h1 className="text-6xl text-center">Prizes</h1>
+    <div className="mt-20 w-full mx-auto text-white body-container" id="categories">
+      <motion.h2
+      initial={{opacity:0,y:50}}
+      whileInView={{opacity:1, y:0,  
+      transition: {
+        duration: 2 
+      }}}
+      className="text-5xl text-center">
+        PRIZES
+      </motion.h2>
 
-      <div className="flex flex-wrap justify-center items-center gap-x-4 md:gap-x-10 mt-10 px-4 md:px-0">
+      <div className="flex flex-col md:flex-row w-full items-center justify-center gap-10 mt-10 px-[5%]">
+        {categories.map((card) => (
+          <Button 
+              key={card.id}
+              borderRadius='1.75rem'
+              duration={Math.floor(Math.random() * 10000) + 10000}
+              className={`flex-1 bg-slate-900/[0.8] ${category === card.category ? 'border-n-4 text-n-4' : 'border-neutral-200 text-n-1'}`}
+              onClick={() => changeCategory(card.category)}
+          >
+              <div className={`flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2 `}>
+                  {/* <img src={card.thumbnail} alt={card.thumbnail} className='lg:w-32 md:w-20 w-16' /> */}
+                  <div className='lg:ms-5'>
+                      <h1 className='text-start text-xl md:text-2xl font-bold'>
+                          {card.title}
+                      </h1>
+                      {/* <p className='text-start text-white-100 mt-3 font-semibold'>
+                          {card.desc}
+                      </p> */}
+                  </div>
+              </div>
+          </Button>
+        ))}
+      </div>
+
+      {/* <div className="flex flex-wrap justify-center items-center gap-x-4 md:gap-x-10 mt-10 px-4 md:px-0">
         <button className={`blob-btn ${category == "school" && "active-category"}`} onClick={() => changeCategory("school")}>
           School Category
           <span className="blob-btn__inner">
@@ -59,28 +94,32 @@ const Prizes = () => {
             </span>
           </span>
         </button>
-      </div>
+      </div> */}
 
-      <div className={`w-full flex flex-wrap-reverse justify-center items-center text-center mt-6 px-4 md:px-0 gap-x-4 md:gap-x-10 ${categoryChange && "animate-fade-up animate-once animate-duration-895 anianimate-linear"}`}>
-        <div className="order-3 md:order-2">
+      <div
+        className={`w-full flex flex-wrap-reverse justify-center items-center text-center mt-6 px-4 md:px-0 gap-x-4 md:gap-x-10 ${
+          categoryChange && "animate-fade-up"
+        }`}
+      >
+        <div className="order-3 md:order-3 lg:order-2">
           <div class="image-wrapper shine scale-75 transform transition duration-80 hover:scale-90">
             <img src={first} alt="trophy" className="h-[350px]" />
           </div>
-          <span className="text-4xl font-bold">
+          <span className="text-4xl font-semibold">
             {prizes[category][0]}
           </span>
         </div>
 
-        <div className="order-2 md:order-1">
+        <div className="order-2 md:order-1 lg:order-1">
           <div class="image-wrapper shine scale-75 transform transition duration-80 hover:scale-90">
             <img src={second} alt="trophy" className="h-[335px]" />
           </div>
-          <span className="text-4xl font-bold">
+          <span className="text-4xl font-semibold">
             {prizes[category][1]}
           </span>
         </div>
 
-        <div className="order-1 md:order-3">
+        <div className="order-1 md:order-1 lg:order-3">
           <div class="image-wrapper shine scale-75 transform transition duration-80 hover:scale-90">
             <img src={third} alt="trophy" className="h-[320px]" />
           </div>

@@ -1,78 +1,150 @@
-import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import { navigation } from "../constants";
 import MenuSvg from "../assets/svg/MenuSvg";
-import { HamburgerMenu } from "./design/Header";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import logo from "../assets/svg/sliot-logo.svg";
-import MagicButton from "./ui/MagicButton";
+import { closeMenu, openMenu } from "./animations";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
-  const pathname = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+  const navigate = useNavigate();
 
   const toggleNavigation = () => {
     if (openNavigation) {
+      closeMenu();
       setOpenNavigation(false);
       enablePageScroll();
     } else {
+      openMenu();
       setOpenNavigation(true);
       disablePageScroll();
     }
   };
 
-  return (
-    <div className="flex flex-col justify-center items-center">
-      <div className="flex justify-center items-center">
-        <div
-          className={`fixed top-0 w-full px-[5%] lg:px-[4%] xl:px-[10%] mx-auto z-50 shadow-lg backdrop-blur-lg ${
-            openNavigation
-              ? "bg-white/30"
-              : "lg:backdrop-blur-md bg-opacity-40 backdrop-brightness-75"
-          }`}
-        >
-          <div className="flex items-center justify-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-            <a className="flex items-center w-[12rem] xl:mr-8" href="/">
-              <img src={logo} width={100} height={100} alt="orea" />
-            </a>
+  const smoothScroll = (targetId, duration = 1500) => {
+    const targetElement = document.getElementById(targetId);
+    if (!targetElement) return;
 
+    const targetPosition = targetElement.getBoundingClientRect().top;
+    const startPosition = window.scrollY;
+    let startTime = null;
+
+    const animation = (currentTime) => {
+      if (!startTime) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const run = easeInOutQuad(timeElapsed, startPosition, targetPosition, duration);
+      window.scrollTo(0, run);
+
+      if (timeElapsed < duration) {
+        requestAnimationFrame(animation);
+      }
+    };
+
+    const easeInOutQuad = (t, b, c, d) => {
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t + b;
+      t--;
+      return (-c / 2) * (t * (t - 2) - 1) + b;
+    };
+
+    requestAnimationFrame(animation);
+  };
+
+  const handleClick = (id, isExternal) => {
+    if (openNavigation) {
+      enablePageScroll();
+      closeMenu();
+      setOpenNavigation(false);
+    }
+    if (isExternal) {
+      navigate(id);
+      return;
+    }
+    smoothScroll(id, 1500);
+  };
+
+  useEffect(() => {
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.3 } 
+    );
+
+    navigation.forEach((item) => {
+      const section = document.getElementById(item.url);
+      if (section) sectionObserver.observe(section);
+    });
+
+    return () => sectionObserver.disconnect();
+  }, []);
+
+  return (
+    <div className="flex flex-col items-center justify-center">
+      {/* <div className="flex items-center justify-center"> */}
+        <div
+          className={`fixed top-0 w-full px-[5%] xl:px-[6%] mx-auto z-40 shadow-xl backdrop-blur-lg backdrop-brightness-75 nav-primary`}
+        >
+          <div className={`flex xl:items-center xl:justify-between px-5 lg:px-7.5 xl:px-10 max-xl:py-4 ${openNavigation ? "flex-col justify-start items-start " : "justify-between items-center"}`}>
+            <a
+              className={`flex items-center xl:mr-8 ${
+                openNavigation ? "" : "w-[12rem]"
+              }`}
+              href="/"
+            >
+              <img src={logo} width={100} height={100} alt="sliot" />
+            </a>
+            <button
+              className={`xl:hidden ${openNavigation ? "z-6 absolute top-9 right-[8%]" : ""}`}
+              onClick={toggleNavigation}
+            >
+              <MenuSvg openNavigation={openNavigation} />
+            </button>
             <nav
               className={`${
-                openNavigation ? "flex" : "hidden"
-              } fixed top-[7rem] bottom-[2rem] left-[5%] right-[5%] rounded-lg bg-white/30 lg:static lg:flex lg:bg-transparent`}
+                openNavigation
+                  ? "flex h-screen justify-start align-top   items-start"
+                  : "hidden"
+              } rounded-lg xl:static xl:flex xl:bg-transparent`}
             >
-              <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
+              <div className="relative flex flex-col items-start justify-center mt-5 text-center z-2 xl:flex-row xl:bg-transparent xl:px-0 rounded-xl nav-link">
                 {navigation.map((item) => (
-                  <a
+                  <button
                     key={item.id}
-                    href={item.url}
-                    className={`block relative font-poppins text-base text-n-1 transition-colors hover:text-n-4 ${
+                    onClick={() => handleClick(item.url, item.isExternal)}
+                    className={`relative font-poppins text-base transition-colors px-5  py-4 md:py-6 xl:px-3 lg:text-sm lg:font-normal ${
                       item.onlyMobile ? "lg:hidden" : ""
-                    } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-sm lg:font-normal ${
-                      item.url === pathname.pathname
-                        ? "z-2 lg:text-n-4"
-                        : "lg:text-n-1"
-                    } lg:leading-5 lg:hover:text-n-3`}
+                    } ${
+                      activeSection === item.url
+                        ? "text-sky-500" 
+                        : "text-n-1 hover:text-n-4"
+                    }`}
                   >
                     {item.title}
-                  </a>
+                  </button>
                 ))}
               </div>
-              <HamburgerMenu />
             </nav>
             <button
-              className="relative inline-flex h-12 overflow-hidden rounded-2xl p-[1px] focus:outline-none"
+              className="hidden xl:inline-flex relative h-12 overflow-hidden rounded-2xl p-[1px] focus:outline-none"
+              onClick={() =>
+                smoothScroll("contact", 1500) 
+              }
             >
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#2b0091_0%,#393BB2_50%,#ff00a4_100%)]" />
-              <span
-                className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-2xl bg-slate-950 px-12 text-sm font-medium bg-n- text-n-1 backdrop-blur-3xl gap-2`}
-              >
+              <span className="inline-flex items-center justify-center w-full h-full gap-2 px-12 text-sm font-medium cursor-pointer rounded-2xl bg-slate-950 text-n-1 backdrop-blur-3xl">
                 Contact
               </span>
             </button>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 };

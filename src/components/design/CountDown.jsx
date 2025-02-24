@@ -4,9 +4,10 @@ import { motion } from "framer-motion";
 
 import { useAnimate } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import MagicButton from '../ui/MagicButton';
 
 // NOTE: Change this date to whatever date you want to countdown to :)
-const COUNTDOWN_FROM = "2024-12-18";
+const COUNTDOWN_FROM = "2025-01-08";
 
 const SECOND = 1000;
 const MINUTE = SECOND * 60;
@@ -33,7 +34,7 @@ const ShiftingCountdown = () => {
               
               
               
-              className="py-2 mb-10 font-mono text-red-800 text-7xl " >Registration Closed</motion.h1>
+              className="flex justify-center px-10 py-6 mt-20 mb-10 text-2xl text-center text-red-600 uppercase border rounded-lg font-poppins sm:text-5xl" >Registration Closed</motion.h1>
              
              </div>
     )
@@ -42,20 +43,23 @@ const ShiftingCountdown = () => {
     <div className="flex flex-col items-center justify-center p-4 bg-transparent">
 
 <motion.h1
-      initial={{opacity:0,y:100}}
+      initial={{opacity:0,y:10}}
       whileInView={{opacity:1, y:0,  transition: {
         duration: 3 // Animation duration
       }}}
       
       
       
-      className="flex justify-center py-2 mb-10 font-mono text-2xl text-center text-white sm:text-5xl" >Registration Closes In</motion.h1>
+      className="flex justify-center py-2 mt-20 mb-10 text-4xl text-center text-white uppercase font-poppins sm:text-5xl" >Registration Closes In</motion.h1>
       <div className="flex items-center justify-center w-full mx-auto md:gap-10 ">
         <CountdownItem unit="Day" text="days" />
         <CountdownItem unit="Hour" text="hours" />
         <CountdownItem unit="Minute" text="minutes" />
         <CountdownItem unit="Second" text="seconds" />
       </div>
+      <a className='mt-4' href='https://bit.ly/sliot2025-register' target='_blank'>
+        <MagicButton title="Register Now" />
+      </a>
     </div>
   );
 };
@@ -72,7 +76,12 @@ const CountdownItem = ({ unit, text }) => {
 
 
   return (
-    <div className="flex flex-col items-center justify-center gap-1 font-mono rounded-full h-28 w-28 sm:h-40 sm:w-40 bg-gradient-to-r from-fuchsia-900 to-stone-900border-2 border-slate-200 md:gap-2">
+    <motion.div
+    initial={{opacity:0,scale:0.9}}
+    whileInView={{opacity:1, scale:1,  transition: {
+      duration: 1 // Animation duration
+    }}}
+    className="flex flex-col items-center justify-center gap-1 font-mono rounded-full h-28 w-28 sm:h-40 sm:w-40 bg-gradient-to-r from-fuchsia-900 to-stone-900border-2 border-slate-200 md:gap-2">
       <div className="relative w-full overflow-hidden text-center">
         <span
           ref={ref}
@@ -84,7 +93,7 @@ const CountdownItem = ({ unit, text }) => {
       <span className="text-xs font-light text-n-4 md:text-sm lg:text-base">
         {text}
       </span>
-    </div>
+    </motion.div>
   );
 };
 

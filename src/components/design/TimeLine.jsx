@@ -5,7 +5,7 @@ import TimeLineCard from "../ui/TimeLineCard";
 export default function TimeLine() {
   const events = [
     {
-      date: "10 Dec 2023",
+      date: "26 Dec 2024",
       title: "Registrations Opening (Expression of Interest)",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -13,7 +13,7 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "10 Dec 2023",
+      date: "08 Jan 2025",
       title: "Introductory Session",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
@@ -21,72 +21,98 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "17 Dec 2023",
-      title: "Proposal Submission Deadline",
+      date: "10 Jan 2025",
+      title: "Open Proposal Submission",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
       isActive: true,
     },
     {
-      date: "22 Dec 2023",
-      title: "Announcement of Elimination Round Winners",
+      date: "16 February 2025",
+      title: "Proposal Submission Deadline",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
-      isActive: false,
+      isActive: true,
     },
+    // {
+    //   date: "20 Jan 2023",
+    //   title: "Announcement of Elimination Round Winners",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
+    //   imgSrc: "assets/3.png",
+    //   isActive: false,
+    // },
     {
-      date: "13 Jan 2024",
+      date: "23 Feb 2025",
       title: "School Category Workshop",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
       isActive: false,
     },
+   
+    
     {
-      date: "20 Jan 2024",
-      title: "Progress Evaluation Deadline",
+      date: "23 Feb 2025",
+      title: "Video Submission open for All Categories",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
       isActive: false,
     },
     {
-      date: "25 Jan 2024",
-      title: "Announcing semi-finalists",
+      date: "02 March 2025",
+      title: "University & Open Category Workshop",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
       isActive: false,
     },
     {
-      date: "25 Jan 2025",
-      title: "University and open category workshop",
+      date: "03 March 2025",
+      title: "School Video Submission closes",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
       isActive: false,
     },
     {
-      date: "To be decided",
-      title: "Semi Finals",
+      date: "07 March 2025",
+      title: "open/university Video Submission closes",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
       isActive: false,
     },
     {
-      date: "To be decided",
-      title: "Announcing Finalists",
+      date: "15 March 2025",
+      title: "University & Open Category Semifinals(physical)",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
       isActive: false,
     },
     {
-      date: "To be decided",
-      title: "Finals",
+      date: "16 March 2025",
+      title: "School Category Semifinals(online)",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
+      imgSrc: "assets/3.png",
+      isActive: false,
+    },
+    // {
+    //   date: "To be decided",
+    //   title: "Announcing Finalists",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
+    //   imgSrc: "assets/3.png",
+    //   isActive: false,
+    // },
+    {
+      date: "29 March 2025",
+      title: "Grand Finale",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
       imgSrc: "assets/3.png",
@@ -121,17 +147,17 @@ export default function TimeLine() {
   // }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen min-h-screen align-middle bg-transparent">
+    <div className="flex flex-col items-center justify-center w-screen min-h-screen align-middle bg-transparent" id="timeline">
       <motion.h1
-      initial={{opacity:0,y:100}}
+      initial={{opacity:0,y:50}}
       whileInView={{opacity:1, y:0,  transition: {
-        duration: 3 // Animation duration
+        duration: 1 // Animation duration
       }}}
       
       
       
-      className="py-2 mb-10 text-3xl font-bold text-white sm:text-7xl font-poppins" >Event TimeLine</motion.h1>
-      <div className="space-y-8 w-[60%] relative mx-10 my-5 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+      className="py-2 mt-20 mb-10 text-4xl text-white sm:text-5xl font-poppins" >EVENT TIMELINE</motion.h1>
+      <div className="space-y-8 w-[80%] md:w-[60%] relative mx-10 my-5 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
         {events.map((event, index) => (
             <TimeLineCard key={index} event={event} index={index} />
 

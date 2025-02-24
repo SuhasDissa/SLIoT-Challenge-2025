@@ -7,6 +7,7 @@ import animationData from "../../constants/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import ImageSlider from "../ImageSlider";
+import { point } from "@/assets";
 
 export const BentoGrid = ({ className, children }) => {
   return (
@@ -25,6 +26,7 @@ export const BentoGridItem = ({
   className,
   title,
   description,
+  descriptionItems,
   id,
   img,
   imgClassName,
@@ -114,11 +116,21 @@ export const BentoGridItem = ({
           <div className="font-sans font-semibold text-lg lg:text-3xl max-w-96 z-5 text-n-1">
             {title}
           </div>
-          <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-5 mt-2">
+          <div className="font-sans font-extralight text-white text-sm md:text-xs lg:text-base z-5 mt-2">
             {renderDescription(description)}
           </div>
 
           {id === 1 && <GlobeDemo />}
+          {(id === 21 || id === 22 || id === 23) && (
+            <div className="font-sans font-extralight text-white text-sm md:text-xs lg:text-base z-5 mt-2">
+              {descriptionItems.map((item, index) => (
+                <div key={index} className="flex items-start gap-2 mt-2">
+                  <img src={point} alt="point" className="h-4 w-4 lg:mt-1" />
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+          )}
 
           {id === 7 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2 lg:justify-center">
@@ -175,7 +187,7 @@ export const BentoGridItem = ({
       </div>
       {isModalOpen && link && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
-          <div className="relative w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-40 backdrop-blur-md backdrop-brightness-75">
+          <div className="relative w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-40 backdrop-blur-md backdrop-brightness-75 p-4 md:p-8 lg:p-12">
             {/* Close button */}
             <button
               className="absolute top-2 right-2 text-white hover:text-gray-400 text-4xl font-bold"
@@ -183,29 +195,28 @@ export const BentoGridItem = ({
             >
               ×
             </button>
-
+        
             {/* Video Title */}
-            <h2 className="text-center font-semibold text-n-1 text-2xl mb-4">
+            <h2 className="text-center font-semibold text-n-1 text-2xl md:text-3xl lg:text-4xl mb-4">
               {title}
             </h2>
             {/* Embedded YouTube Video */}
-            <div className="aspect-w-16 aspect-h-9 z-50">
+            <div className="w-full max-w-2xl lg:max-w-4xl aspect-video z-50">
               <iframe
-                width="928"
-                height="522"
-                src="https://www.youtube.com/embed/v6wOjQGANsE"
+                src={link}
                 title={title}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
+                className="w-full h-full"
               ></iframe>
             </div>
           </div>
         </div>
       )}
 
-      {isModalOpen && imageArray && (
+      {isModalOpen && imageArray.length > 0 && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
           <div className="relative w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-40 backdrop-blur-md backdrop-brightness-75">
             {/* Close button */}
