@@ -78,7 +78,16 @@ const SelectedTeams = () => {
         { name: "Team NC", school: "Nalanda College, Colombo" },
         { name: "FuTech_Divers", school: "Sujatha Vidyalaya" },
         { name: "EL FI", school: "Hanwella Rajasinghe Central College" },
-        { name: "Tech Wizards", school: "St. Joseph's College, Colombo 10" }
+        { name: "Tech Wizards", school: "St. Joseph's College, Colombo 10" },
+        { name: "Blitz Falcon", school: "Debarawewa Janadhipathi" },
+        { name: "Sacred Heart Cc", school: "Sacred Heart Convent" },
+        { name: "Swimmers", school: "Richmond College" },
+        { name: "TEENBOYZ", school: "Mount Calvary" },
+        { name: "GRADE 8 HEAR1", school: "Sacred Heart Convent" },
+        { name: "SpotFinders", school: "Mahinda College" },
+        { name: "HEARTIANCE RO", school: "Sacred Heart Convent" },
+        { name: "Sacred Heart Cc", school: "Sacred Heart Convent" },
+        { name: "Lion King", school: "Theraputtha Primary School" },
     ],
     university: [],
     open: []
