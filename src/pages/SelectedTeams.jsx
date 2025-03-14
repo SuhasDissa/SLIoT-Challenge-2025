@@ -12,46 +12,46 @@ const SelectedTeams = () => {
         // { name: "TechRiders", school: "Gateway College Kandy" },
         // { name: "Quantum Pioneers", school: "R/Ehe/Darmapala College" },
         // { name: "Aloka Tek Teach", school: "Ananda Sastralaya Mathugama" },
-        // { name: "Alfa bot 3.0", school: "R/Kuruwita Central College" },
+        { name: "Alfa bot 3.0", school: "R/Kuruwita Central College" }, ///
         // { name: "REVORA", school: "R/Kuruwita Central College" },
-        // { name: "Pathsence", school: "R/Kuruwita Central College (National School)" },
+        { name: "Pathsence", school: "R/Kuruwita Central College (National School)" }, ///
         // { name: "Online Voting Hub", school: "R/Kuruwita Central College (National School)" },
-        // { name: "Hydro Hackers", school: "Taxila Central College" },
+        { name: "Hydro Hackers", school: "Taxila Central College" }, ///
         // { name: "Smart Pouch", school: "R/Kuruwita Central College (National School)" },
-        // { name: "ROBO X EXPLORES", school: "R/EMB/President's College" },
+        { name: "ROBO X EXPLORES", school: "R/EMB/President's College" }, ///
         // { name: "W.S.A.Randunu Bandara", school: "A/Thabuthegama National College" },
         // { name: "Smart Squad", school: "BT/BC Kathankudy Central College" },
         // { name: "SightSync", school: "Gateway College Dehiwala" },
-        // { name: "Neos", school: "Visakha Vidyalaya" },
+        { name: "Neos", school: "Visakha Vidyalaya" }, ///
         // { name: "Blacksheep", school: "Swarna Jayanthi National College" },
         // { name: "U.Luthmin Lesandu", school: "G/Dharmasoka College" },
         // { name: "The Innovation Hub", school: "St. Michael's College" },
         // { name: "BlitZ", school: "Gateway College Colombo" },
-        // { name: "Rover", school: "Wycherley International School-Gampaha" },
+        { name: "Rover", school: "Wycherley International School-Gampaha" }, ///
         // { name: "Smart Deafblind Kit", school: "Nalanda College Colombo 10" },
         // { name: "SoloDev", school: "B/Bandarawela Central College" },
         // { name: "Robetics 2008", school: "J/Holy Family Convent" },
-        // { name: "REAL_PROGRAMMER", school: "St. Joseph's College, Colombo 10" },
-        // { name: "Quarista", school: "Royal College, Colombo 7" },
+        { name: "REAL_PROGRAMMER", school: "St. Joseph's College, Colombo 10" }, ///
+        { name: "Quarista", school: "Royal College, Colombo 7" }, ///
         // { name: "Ocular Ds", school: "Senanayake College" },
         // { name: "Insight Seekers", school: "Rahula College Matara" },
-        // { name: "GCC12", school: "Gateway College Colombo" },
+        { name: "GCC12", school: "Gateway College Colombo" }, ///
         // { name: "R.Pasindu Pinsara", school: "Urapola Central College" },
         // { name: "Mahinda College Galle", school: "Mahinda College Galle" },
         // { name: "Wellfocus", school: "Dr. Richard Pathirana College" },
         // { name: "Miyuru Sathsara (Leader)", school: "Sathsara MadhubahanaKa/Dhe/Ruwanwella Royal College" },
         // { name: "Batti Royal Kings", school: "Bt/Bt Methodist Central College" },
-        // { name: "R.J.W. Sineth Induwara", school: "H/Meegahawela K.V" },
+        { name: "Uro Tech (R.J.W. Sineth Induwara)", school: "H/Meegahawela K.V" }, ///
         // { name: "Crew X", school: "Nalanda College" },
         // { name: "Innovative Minders", school: "Mahinda Rajapaksha Maha Vidyalaya, Matara" },
         // { name: "DPN OF ROBOTECH", school: "H/Ambalantota N.S" },
-        // { name: "Team Trinity Syntax", school: "Trinity College Kandy" },
+        { name: "Team Trinity Syntax", school: "Trinity College Kandy" }, ///
         // { name: "LORD OF CODE", school: "AK/Munawwara Junior College" },
         // { name: "APCUTL", school: "Ak/Munawwara Junior College" },
         // { name: "Nexovate", school: "Mercy Education Institute" },
-        // { name: "Smart Sense Innovators", school: "Mercy Education Institute" },
-        // { name: "Senuka", school: "R/EMB/Bodhiraja College" },
-        // { name: "Evolution", school: "Dharmapala College, Pannipitiya" },
+        { name: "Smart Sense Innovators", school: "Mercy Education Institute" }, ///
+        { name: "Senuka", school: "R/EMB/Bodhiraja College" }, ///
+        { name: "Evolution", school: "Dharmapala College, Pannipitiya" }, ///
         // { name: "M.U.Yasir Umar", school: "Kattankudy Center College" },
         // { name: "Team Alpha", school: "Royal College Horana" },
         // { name: "TEAM ALPHA", school: "Mercy Education Institute" },
@@ -59,23 +59,23 @@ const SelectedTeams = () => {
         // { name: "Pahan Methsara", school: "H/Therapuththa National School" },
         // { name: "Ahkam Tanjiro", school: "Zahira College Colombo" },
         // { name: "MediLink", school: "Ananda College" },
-        // { name: "Sentinel", school: "St. Joseph's College, Colombo 10" },
-        // { name: "NeuroVerse", school: "Galahitiyawa Central College" },
+        { name: "Sentinel", school: "St. Joseph's College, Colombo 10" }, ///
+        { name: "NeuroVerse", school: "Galahitiyawa Central College" }, ///
         // { name: "Go Jetters", school: "MR/Rahula College" },
         // { name: "I.C.T Ninjas of Sri Lanka", school: "J/Hartley College, Point Pedro" },
         // { name: "APOLA", school: "Zahira College" },
         // { name: "Lion King", school: "H/Therapuththa Primary School" },
         // { name: "Therapuththa", school: "H/Therapuththa National School" },
-        // { name: "Richwolf", school: "G/Richmond College" },
+        { name: "Richwolf", school: "G/Richmond College" }, ///
         // { name: "Cyber Storm", school: "Rahula College" },
         // { name: "Night Fire", school: "H/Therapuththa N.S" },
         // { name: "Little Star", school: "H/Weraketiya Rajapaksha Central" },
         // { name: "Innovate Infinity", school: "President's College - Kotte" },
         // { name: "Synapsnex", school: "Dharmaraja College Kandy" },
         // { name: "Monkey King", school: "Therapuththa" },
-        // { name: "IRTS Inventions", school: "WP/HO/Mahinda Rajapaksha College" },
+        { name: "IRTS Inventions", school: "WP/HO/Mahinda Rajapaksha College" }, ///
         // { name: "Innovation Legends", school: "Zahira College Colombo 10" },
-        // { name: "Team NC", school: "Nalanda College, Colombo" },
+        { name: "Team NC", school: "Nalanda College, Colombo" }, ///
         // { name: "FuTech_Divers", school: "Sujatha Vidyalaya" },
         // { name: "EL FI", school: "Hanwella Rajasinghe Central College" },
         // { name: "Tech Wizards", school: "St. Joseph's College, Colombo 10" },
@@ -84,7 +84,7 @@ const SelectedTeams = () => {
         // { name: "Swimmers", school: "Richmond College" },
         // { name: "TEENBOYZ", school: "Mount Calvary" },
         // { name: "GRADE 8 HEAR1", school: "Sacred Heart Convent" },
-        // { name: "SpotFinders", school: "Mahinda College" },
+        { name: "SpotFinders", school: "Mahinda College" }, ///
         // { name: "HEARTIANCE RO", school: "Sacred Heart Convent" },
         // { name: "Sacred Heart Cc", school: "Sacred Heart Convent" },
         // { name: "Lion King", school: "Theraputtha Primary School" },
