@@ -16,7 +16,7 @@ const SelectedTeams = () => {
         // { name: "REVORA", school: "R/Kuruwita Central College" },
         { name: "Pathsence", school: "R/Kuruwita Central College (National School)" }, ///
         // { name: "Online Voting Hub", school: "R/Kuruwita Central College (National School)" },
-        { name: "Hydro Hackers", school: "Taxila Central College" }, ///
+        { name: "Hydro Team", school: "G/Sacred Heart Convent" }, ///
         // { name: "Smart Pouch", school: "R/Kuruwita Central College (National School)" },
         { name: "ROBO X EXPLORES", school: "R/EMB/President's College" }, ///
         // { name: "W.S.A.Randunu Bandara", school: "A/Thabuthegama National College" },
