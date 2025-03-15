@@ -91,9 +91,9 @@ const SelectedTeams = () => {
     ],
     university: [
       // { name: "Phoenix Idea", school: "Sabaragamuwa University of Sri Lanka" },
-      // { name: "Syntax Squad", school: "University of Moratuwa" },
-      // { name: "Novanex", school: "University of Moratuwa" },
-      // { name: "Dyson Sphere", school: "University of Moratuwa" },
+      { name: "Syntax Squad", school: "University of Moratuwa" }, ///
+      { name: "Novanex", school: "University of Moratuwa" }, ///
+      { name: "Dyson Sphere", school: "University of Moratuwa" }, ///
       // { name: "Sparks", school: "Curtin University Colombo" },
       // { name: "VERTEX", school: "University of Moratuwa" },
       // { name: "IT Wolves", school: "SLIIT Northern Uni" },
@@ -111,8 +111,8 @@ const SelectedTeams = () => {
       // { name: "Team ZenNova", school: "Sabaragamuwa University of Sri Lanka" },
       // { name: "Team Vitalis", school: "University of Sri Jayewardenepura" },
       // { name: "Legendarymakers", school: "University of Moratuwa" },
-      // { name: "AgriGenix", school: "University of Moratuwa" },
-      // { name: "Zypher", school: "University of Moratuwa" },
+      { name: "AgriGenix", school: "University of Moratuwa" }, ///
+      { name: "Zypher", school: "University of Moratuwa" }, ///
       // { name: "OrbisD", school: "Java Institute" },
       // { name: "Team GLOW", school: "University of Moratuwa" },
       // { name: "Trendy Troopers", school: "University of Moratuwa" },
@@ -133,18 +133,18 @@ const SelectedTeams = () => {
       // { name: "RazorCrest", school: "University of Moratuwa" },
       // { name: "Silicon", school: "University of Kelaniya" },
       // { name: "Vertex", school: "University of Moratuwa" },
-      // { name: "7X Labs", school: "University of Moratuwa" },
+      { name: "7X Labs", school: "University of Moratuwa" }, ///
       // { name: "Q_Bee", school: "University of Ruhuna" },
-      // { name: "TechVision", school: "University of Jaffna" },
-      // { name: "HydroSense", school: "University of Moratuwa" },
+      { name: "TechVision", school: "University of Jaffna" }, ///
+      { name: "Hydro Sense", school: "University of Moratuwa" }, ///
       // { name: "FutureSync", school: "University of Moratuwa" },
       // { name: "Revolt", school: "University of Moratuwa" },
       // { name: "Team JASPERN", school: "University of Moratuwa" },
-      // { name: "AquaSmatters", school: "University of Ruhuna" },
+      { name: "AquaSmatters", school: "University of Ruhuna" }, ///
       // { name: "Code Nexus", school: "University of Moratuwa" },
-      // { name: "SyntaxCode", school: "University of Moratuwa" },
+      { name: "SyntaxCode", school: "University of Moratuwa" }, ///
       // { name: "ERROR 404", school: "SLIIT" },
-      // { name: "Team EvoBots", school: "University of Moratuwa" },
+      { name: "Team EvoBots", school: "University of Moratuwa" }, ///
       // { name: "Sensora", school: "Sabaragamuwa University of Sri Lanka" },
       // { name: "DreamBuilders", school: "University of Sri Jayewardenepura" },
       // { name: "Amor Developers Group", school: "Informatics Institute of Technology" },
@@ -152,13 +152,13 @@ const SelectedTeams = () => {
       // { name: "CripticHackers", school: "University of Jaffna" },
       // { name: "Team RASPBerry", school: "Informatics Institute of Technology" },
       // { name: "X-TEC", school: "University of Moratuwa" },
-      // { name: "Spark Squad", school: "University of Moratuwa" },
+      { name: "Spark Squad", school: "University of Moratuwa" }, ///
       // { name: "RootQuarks", school: "Uva Wellassa University" },
       // { name: "TechTronics", school: "Uva Wellassa University" },
       // { name: "Byte_Me", school: "University of Moratuwa" },
       // { name: "IOTRONS", school: "Rajarata University of Sri Lanka" },
       // { name: "HydroSense", school: "University of Kelaniya" },
-      // { name: "Syntech-IoT", school: "University of Moratuwa" },
+      { name: "Syntech-IoT", school: "University of Moratuwa" }, ///
       // { name: "Tech Titans", school: "Sri Lanka Technology Campus (SLTC)" },
       // { name: "StarkTech", school: "University of Moratuwa" },
       // { name: "LogicLegion", school: "University of Jaffna" },
@@ -172,9 +172,9 @@ const SelectedTeams = () => {
       // { name: "Iotelligence", school: "General Sir John Kotelawala Defence University" },
       // { name: "Smart Grid", school: "IIT" },
       // { name: "IOT Mavericks", school: "University of Moratuwa" },
-      // { name: "Ignitrix", school: "University of Moratuwa" },
+      { name: "Ignitrix", school: "University of Moratuwa" }, ///
       // { name: "Byte Blossoms", school: "University of Moratuwa" },
-      // { name: "SmartFlow", school: "SLIIT" },
+      { name: "SmartFlow", school: "SLIIT" }, ///
       // { name: "SafeCy", school: "University of Moratuwa" },
       // { name: "IoTrick", school: "University of Moratuwa" },
       // { name: "WEENIOT", school: "University of Moratuwa" },
@@ -185,13 +185,13 @@ const SelectedTeams = () => {
       // { name: "Mug Picco", school: "University of Moratuwa" },
       // { name: "Team Novare", school: "University of Moratuwa" },
       // { name: "TechnoFive", school: "University of Moratuwa" },
-      // { name: "AquaGuard", school: "University of Moratuwa" },
+      { name: "AquaGuard", school: "University of Moratuwa" }, ///
       // { name: "Zak Strom", school: "NSBM Green University" },
       // { name: "SCOPE", school: "University of Moratuwa" },
-      // { name: "The Sentinels", school: "University of Moratuwa" },
-      // { name: "Robotica", school: "University of Colombo" },
-      // { name: "PixaVisualz", school: "University of Moratuwa" },
-      // { name: "TricalBots", school: "University of Moratuwa" },
+      { name: "The Sentinels", school: "University of Moratuwa" }, ///
+      { name: "Roboticca", school: "University of Colombo" }, ///
+      { name: "PixaVisualz", school: "University of Moratuwa" }, ///
+      { name: "Trical Bots", school: "University of Moratuwa" }, ///
       // { name: "Blue Circle", school: "University of Peradeniya" },
       // { name: "DRAROSG", school: "University of Moratuwa" },
       // { name: "Legendary Makers", school: "University of Moratuwa" },
