@@ -111,7 +111,7 @@ export default function TimeLine() {
     //   isActive: false,
     // },
     {
-      date: "29 March 2025",
+      date: "27 April 2025",
       title: "Grand Finale",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada aliquet porttitor. Nunc tempus eget massa vitae scelerisque.",
