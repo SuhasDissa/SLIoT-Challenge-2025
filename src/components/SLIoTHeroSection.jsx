@@ -56,7 +56,7 @@ const SLIoTHeroSection = () => {
               </motion.p>
              
 
-              <motion.div
+              {/* <motion.div
               initial={{ y: 0,opacity:0 }}
               animate={{opacity:1, y:0,type:'spring'}}
               transition={{duration:0.5,delay:4,ease:'anticipate'}}
@@ -71,7 +71,7 @@ const SLIoTHeroSection = () => {
                     </button>
                   </a>
                 </div>
-              </motion.div>
+              </motion.div> */}
               <div className="relative flex items-end justify-center gap-6 mt-6 md:justify-end md:mt-10 lg:-mt-10 md:gap-10">
                 <div
                   className="relative z-10 flex flex-col items-center mt-4 text-sm font-bold text-n-1 md:items-end md:mt-8">
