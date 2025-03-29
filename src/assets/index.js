@@ -103,6 +103,41 @@ import sliot2025_uniworkshop_22 from "./gallery/SLIoT2025/uniworkshop/22.jpg";
 import sliot2025_uniworkshop_23 from "./gallery/SLIoT2025/uniworkshop/23.jpg";
 
 
+import sliot2025_schoolworkshop_1 from "./gallery/SLIoT2025/schoolworkshop/1.jpg";
+import sliot2025_schoolworkshop_2 from "./gallery/SLIoT2025/schoolworkshop/2.jpg";
+import sliot2025_schoolworkshop_3 from "./gallery/SLIoT2025/schoolworkshop/3.jpg";
+import sliot2025_schoolworkshop_4 from "./gallery/SLIoT2025/schoolworkshop/4.jpg";
+import sliot2025_schoolworkshop_5 from "./gallery/SLIoT2025/schoolworkshop/5.jpg";
+import sliot2025_schoolworkshop_6 from "./gallery/SLIoT2025/schoolworkshop/6.jpg";
+import sliot2025_schoolworkshop_7 from "./gallery/SLIoT2025/schoolworkshop/7.jpg";
+import sliot2025_schoolworkshop_8 from "./gallery/SLIoT2025/schoolworkshop/8.jpg";
+import sliot2025_schoolworkshop_9 from "./gallery/SLIoT2025/schoolworkshop/9.jpg";
+import sliot2025_schoolworkshop_10 from "./gallery/SLIoT2025/schoolworkshop/10.jpg";
+import sliot2025_schoolworkshop_11 from "./gallery/SLIoT2025/schoolworkshop/11.jpg";
+import sliot2025_schoolworkshop_12 from "./gallery/SLIoT2025/schoolworkshop/12.jpg";
+import sliot2025_schoolworkshop_13 from "./gallery/SLIoT2025/schoolworkshop/13.jpg";
+import sliot2025_schoolworkshop_14 from "./gallery/SLIoT2025/schoolworkshop/14.jpg";
+import sliot2025_schoolworkshop_15 from "./gallery/SLIoT2025/schoolworkshop/15.jpg";
+import sliot2025_schoolworkshop_16 from "./gallery/SLIoT2025/schoolworkshop/16.jpg";
+import sliot2025_schoolworkshop_17 from "./gallery/SLIoT2025/schoolworkshop/17.jpg";
+import sliot2025_schoolworkshop_18 from "./gallery/SLIoT2025/schoolworkshop/18.jpg";
+import sliot2025_schoolworkshop_19 from "./gallery/SLIoT2025/schoolworkshop/19.jpg";
+import sliot2025_schoolworkshop_20 from "./gallery/SLIoT2025/schoolworkshop/20.jpg";
+import sliot2025_schoolworkshop_21 from "./gallery/SLIoT2025/schoolworkshop/21.jpg";
+import sliot2025_schoolworkshop_22 from "./gallery/SLIoT2025/schoolworkshop/22.jpg";
+import sliot2025_schoolworkshop_23 from "./gallery/SLIoT2025/schoolworkshop/23.jpg";
+import sliot2025_schoolworkshop_24 from "./gallery/SLIoT2025/schoolworkshop/24.jpg";
+import sliot2025_schoolworkshop_25 from "./gallery/SLIoT2025/schoolworkshop/25.jpg";
+import sliot2025_schoolworkshop_26 from "./gallery/SLIoT2025/schoolworkshop/26.jpg";
+import sliot2025_schoolworkshop_27 from "./gallery/SLIoT2025/schoolworkshop/27.jpg";
+import sliot2025_schoolworkshop_28 from "./gallery/SLIoT2025/schoolworkshop/28.jpg";
+import sliot2025_schoolworkshop_29 from "./gallery/SLIoT2025/schoolworkshop/29.jpg";
+import sliot2025_schoolworkshop_30 from "./gallery/SLIoT2025/schoolworkshop/30.jpg";
+
+
+
+
+
 
 import robot from "./robot.png";
 
@@ -209,6 +244,36 @@ export {
   sliot2025_uniworkshop_21,
   sliot2025_uniworkshop_22,
   sliot2025_uniworkshop_23,
+  sliot2025_schoolworkshop_1,
+  sliot2025_schoolworkshop_2,
+  sliot2025_schoolworkshop_3,
+  sliot2025_schoolworkshop_4,
+  sliot2025_schoolworkshop_5,
+  sliot2025_schoolworkshop_6,
+  sliot2025_schoolworkshop_7,
+  sliot2025_schoolworkshop_8,
+  sliot2025_schoolworkshop_9,
+  sliot2025_schoolworkshop_10,
+  sliot2025_schoolworkshop_11,
+  sliot2025_schoolworkshop_12,
+  sliot2025_schoolworkshop_13,
+  sliot2025_schoolworkshop_14,
+  sliot2025_schoolworkshop_15,
+  sliot2025_schoolworkshop_16,
+  sliot2025_schoolworkshop_17,
+  sliot2025_schoolworkshop_18,
+  sliot2025_schoolworkshop_19,
+  sliot2025_schoolworkshop_20,
+  sliot2025_schoolworkshop_21,
+  sliot2025_schoolworkshop_22,
+  sliot2025_schoolworkshop_23,
+  sliot2025_schoolworkshop_24,
+  sliot2025_schoolworkshop_25,
+  sliot2025_schoolworkshop_26,
+  sliot2025_schoolworkshop_27,
+  sliot2025_schoolworkshop_28,
+  sliot2025_schoolworkshop_29,
+  sliot2025_schoolworkshop_30,
   robot,
   sltLogo,
   cse,
