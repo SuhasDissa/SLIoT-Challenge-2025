@@ -521,7 +521,7 @@ export const currentSLIoTShowcases = [
   {
     id: 17,
     title: "School Semi Finals",
-    description: "Coming Soon",
+    description: "",
     className: "lg:col-span-3 md:col-span-3 md:row-span-1",
     imgClassName: "w-full h-full object-cover",
     titleClassName: "justify-start",
