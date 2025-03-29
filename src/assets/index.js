@@ -78,6 +78,31 @@ import sliot2025_semi_22 from "./gallery/SLIoT2025/semi/22.jpg";
 import sliot2025_semi_23 from "./gallery/SLIoT2025/semi/23.jpg";
 import sliot2025_semi_24 from "./gallery/SLIoT2025/semi/24.jpg";
 
+import sliot2025_uniworkshop_1 from "./gallery/SLIoT2025/uniworkshop/1.jpg";
+import sliot2025_uniworkshop_2 from "./gallery/SLIoT2025/uniworkshop/2.jpg";
+import sliot2025_uniworkshop_3 from "./gallery/SLIoT2025/uniworkshop/3.jpg";
+import sliot2025_uniworkshop_4 from "./gallery/SLIoT2025/uniworkshop/4.jpg";
+import sliot2025_uniworkshop_5 from "./gallery/SLIoT2025/uniworkshop/5.jpg";
+import sliot2025_uniworkshop_6 from "./gallery/SLIoT2025/uniworkshop/6.jpg";
+import sliot2025_uniworkshop_7 from "./gallery/SLIoT2025/uniworkshop/7.jpg";
+import sliot2025_uniworkshop_8 from "./gallery/SLIoT2025/uniworkshop/8.jpg";
+import sliot2025_uniworkshop_9 from "./gallery/SLIoT2025/uniworkshop/9.jpg";
+import sliot2025_uniworkshop_10 from "./gallery/SLIoT2025/uniworkshop/10.jpg";
+import sliot2025_uniworkshop_11 from "./gallery/SLIoT2025/uniworkshop/11.jpg";
+import sliot2025_uniworkshop_12 from "./gallery/SLIoT2025/uniworkshop/12.jpg";
+import sliot2025_uniworkshop_13 from "./gallery/SLIoT2025/uniworkshop/13.jpg";
+import sliot2025_uniworkshop_14 from "./gallery/SLIoT2025/uniworkshop/14.jpg";
+import sliot2025_uniworkshop_15 from "./gallery/SLIoT2025/uniworkshop/15.jpg";
+import sliot2025_uniworkshop_16 from "./gallery/SLIoT2025/uniworkshop/16.jpg";
+import sliot2025_uniworkshop_17 from "./gallery/SLIoT2025/uniworkshop/17.jpg";
+import sliot2025_uniworkshop_18 from "./gallery/SLIoT2025/uniworkshop/18.jpg";
+import sliot2025_uniworkshop_19 from "./gallery/SLIoT2025/uniworkshop/19.jpg";
+import sliot2025_uniworkshop_20 from "./gallery/SLIoT2025/uniworkshop/20.jpg";
+import sliot2025_uniworkshop_21 from "./gallery/SLIoT2025/uniworkshop/21.jpg";
+import sliot2025_uniworkshop_22 from "./gallery/SLIoT2025/uniworkshop/22.jpg";
+import sliot2025_uniworkshop_23 from "./gallery/SLIoT2025/uniworkshop/23.jpg";
+
+
 
 import robot from "./robot.png";
 
@@ -161,6 +186,29 @@ export {
   sliot2025_semi_22,
   sliot2025_semi_23,
   sliot2025_semi_24,
+  sliot2025_uniworkshop_1,
+  sliot2025_uniworkshop_2,
+  sliot2025_uniworkshop_3,
+  sliot2025_uniworkshop_4,
+  sliot2025_uniworkshop_5,
+  sliot2025_uniworkshop_6,
+  sliot2025_uniworkshop_7,
+  sliot2025_uniworkshop_8,
+  sliot2025_uniworkshop_9,
+  sliot2025_uniworkshop_10,
+  sliot2025_uniworkshop_11,
+  sliot2025_uniworkshop_12,
+  sliot2025_uniworkshop_13,
+  sliot2025_uniworkshop_14,
+  sliot2025_uniworkshop_15,
+  sliot2025_uniworkshop_16,
+  sliot2025_uniworkshop_17,
+  sliot2025_uniworkshop_18,
+  sliot2025_uniworkshop_19,
+  sliot2025_uniworkshop_20,
+  sliot2025_uniworkshop_21,
+  sliot2025_uniworkshop_22,
+  sliot2025_uniworkshop_23,
   robot,
   sltLogo,
   cse,
