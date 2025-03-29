@@ -53,6 +53,32 @@ import sliot2019_9 from "./gallery/SLIoT2019/9.jpg";
 import sliot2019_10 from "./gallery/SLIoT2019/10.jpg";
 import sliot2019_11 from "./gallery/SLIoT2019/11.jpg";
 
+import sliot2025_semi_1 from "./gallery/SLIoT2025/semi/1.jpg";
+import sliot2025_semi_2 from "./gallery/SLIoT2025/semi/2.jpg";
+import sliot2025_semi_3 from "./gallery/SLIoT2025/semi/3.jpg";
+import sliot2025_semi_4 from "./gallery/SLIoT2025/semi/4.jpg";
+import sliot2025_semi_5 from "./gallery/SLIoT2025/semi/5.jpg";
+import sliot2025_semi_6 from "./gallery/SLIoT2025/semi/6.jpg";
+import sliot2025_semi_7 from "./gallery/SLIoT2025/semi/7.jpg";
+import sliot2025_semi_8 from "./gallery/SLIoT2025/semi/8.jpg";
+import sliot2025_semi_9 from "./gallery/SLIoT2025/semi/9.jpg";
+import sliot2025_semi_10 from "./gallery/SLIoT2025/semi/10.jpg";
+import sliot2025_semi_11 from "./gallery/SLIoT2025/semi/11.jpg";
+import sliot2025_semi_12 from "./gallery/SLIoT2025/semi/12.jpg";
+import sliot2025_semi_13 from "./gallery/SLIoT2025/semi/13.jpg";
+import sliot2025_semi_14 from "./gallery/SLIoT2025/semi/14.jpg";
+import sliot2025_semi_15 from "./gallery/SLIoT2025/semi/15.jpg";
+import sliot2025_semi_16 from "./gallery/SLIoT2025/semi/16.jpg";
+import sliot2025_semi_17 from "./gallery/SLIoT2025/semi/17.jpg";
+import sliot2025_semi_18 from "./gallery/SLIoT2025/semi/18.jpg";
+import sliot2025_semi_19 from "./gallery/SLIoT2025/semi/19.jpg";
+import sliot2025_semi_20 from "./gallery/SLIoT2025/semi/20.jpg";
+import sliot2025_semi_21 from "./gallery/SLIoT2025/semi/21.jpg";
+import sliot2025_semi_22 from "./gallery/SLIoT2025/semi/22.jpg";
+import sliot2025_semi_23 from "./gallery/SLIoT2025/semi/23.jpg";
+import sliot2025_semi_24 from "./gallery/SLIoT2025/semi/24.jpg";
+
+
 import robot from "./robot.png";
 
 import sltLogo from "./SLT-Mobitel.png"
