@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import { preLoaderAnim } from './animations/index';
 
 const Loader = () => {
   const preloaderRef = useRef(null);
@@ -12,10 +11,6 @@ const Loader = () => {
     return () => {
       document.body.classList.remove('overflow-y-hidden');
     };
-  }, []);
-
-  useEffect(() => {
-    preLoaderAnim();
   }, []);
 
   const handleContinue = () => {
