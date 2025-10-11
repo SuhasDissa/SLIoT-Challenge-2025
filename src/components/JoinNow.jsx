@@ -32,15 +32,27 @@ const JoinNow = () => {
           Undergraduate, or Open categories and bring your ideas to life!
         </p>
 
-        <motion.a
-          href="https://forms.gle/csm98QcxGNSppdNQ9"
-          target="_blank"
-          rel="noopener noreferrer"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="inline-block bg-gradient-to-r from-purple-500 to-blue-500 text-white font-bold text-lg px-12 py-4 rounded-full shadow-lg shadow-purple-500/50 hover:shadow-purple-500/75 transition-all duration-300">
-          Register Now
-        </motion.a>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <motion.a
+            href="https://forms.gle/csm98QcxGNSppdNQ9"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-block bg-gradient-to-r from-purple-500 to-blue-500 text-white font-bold text-lg px-12 py-4 rounded-full shadow-lg shadow-purple-500/50 hover:shadow-purple-500/75 transition-all duration-300">
+            Register Now
+          </motion.a>
+
+          <motion.a
+            href="https://chat.whatsapp.com/GtykE7SlPouIlaDrRfK3rH?mode=wwt"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-block bg-gradient-to-r from-green-500 to-green-600 text-white font-bold text-lg px-12 py-4 rounded-full shadow-lg shadow-green-500/50 hover:shadow-green-500/75 transition-all duration-300">
+            Join WhatsApp
+          </motion.a>
+        </div>
 
         <p className="text-neutral-400 text-sm mt-6">
           Don't miss out on this incredible opportunity to showcase your skills and win amazing prizes!
