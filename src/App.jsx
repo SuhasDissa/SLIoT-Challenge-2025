@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Lenis from "@studio-freight/lenis";
 import { useEffect, useRef } from "react";
-import Loader from "./components/Loader";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import SubmissionGuidelines from "./components/SubmissionGuidelines";
 
@@ -39,8 +38,6 @@ const App = () => {
     
     <>
       <div  className="flex flex-col min-h-screen bg-transparent pt-[4.75rem] lg:pt-[5.25rem] overflow-x-hidden ">
-        <Loader />
-     
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
