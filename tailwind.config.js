@@ -103,6 +103,8 @@ export default {
         robotoMono: ["'Roboto Mono'", "monospace"],
         nicoMoji: ["'NicoMoji'", "sans-serif"],
         sans: ['Quattrocento Sans', 'sans-serif'],
+        audiowide: ["'Audiowide'", "sans-serif"],
+        alexandria: ["'Alexandria'", "sans-serif"],
       },
       letterSpacing: {
         tagline: ".15em",

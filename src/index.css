@@ -23,7 +23,7 @@
 @layer base {
   body {
 
-    @apply font-sans text-base text-n-8;
+    @apply font-alexandria text-base text-n-8;
     background: linear-gradient(
       90deg,
       rgba(22, 26, 49, 1) 0%,

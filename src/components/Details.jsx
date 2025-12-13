@@ -18,7 +18,7 @@ const Details = () => {
         >
             CHALLENGE DETAILS
         </motion.h1>
-        <motion.p
+        <motion.ul
             initial={{ opacity: 0.5, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -26,36 +26,16 @@ const Details = () => {
             duration: 0.8,
             ease: "easeInOut",
             }}
-            className="mt-8 text-white text-[14px] md:text-[16px] sm:px-6 md:px-10"
+            className="mt-8 text-white text-[14px] md:text-[16px] sm:px-6 md:px-10 space-y-4 list-disc list-inside"
         >
-           In a world driven by rapid technological advancements, the power to shape a better tomorrow lies in our hands. The SLIoT Challenge is not just a competition - it's a call to action for innovators, creators and changemakers to craft solutions that bridge technology and real-world challenges. Together, we can envision a future where innovation meets purpose and where smart solutions create lasting positive impacts on society and the environment.
-        </motion.p>
-        <motion.p
-            initial={{ opacity: 0.5, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-            delay: 0.3,
-            duration: 0.8,
-            ease: "easeInOut",
-            }}
-            className="mt-6 text-white text-[14px] md:text-[16px] sm:px-6 md:px-10"
-        >
-          The journey begins with registration, where participants express their interest in the competition. An online introductory session will follow, providing detailed information about the challenge and team formation. Teams, consisting of up to five members, must then submit a proposal outlining their idea and team details. Each participant can only be part of one team and each team should appoint a leader and the organizers of SLIoT Challenge will communicate to the leaders directly regarding any announcements in the competition.
-
-        </motion.p>
-        <motion.p
-            initial={{ opacity: 0.5, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-            delay: 0.3,
-            duration: 0.8,
-            ease: "easeInOut",
-            }}
-            className="mt-6 text-white text-[14px] md:text-[16px] sm:px-6 md:px-10"
-        >
-          To support participants in reaching their full potential, we will conduct a series of workshops at University of Moratuwa (or near Colombo) and online. These sessions are designed to provide guidance and enhance competitors' skills. The competition will consist of multiple elimination rounds, culminating in the final round, to be held physically at the University of Moratuwa. The most outstanding teams and individuals will be rewarded with exciting prizes for their creativity, innovation and impact.
-
-        </motion.p>
+          <li>The journey begins with registration, where participants express their interest in the competition.</li>
+          <li>An online introductory session will follow, providing detailed information about the challenge and team formation.</li>
+          <li>Teams consisting of up to five members, must then submit a proposal outlining their idea and team details.</li>
+          <li>Each participant can only be part of one team and each team should appoint a leader and the organizing committee will communicate to the leaders directly regarding any announcements in the competition.</li>
+          <li>To support participants in reaching their full potential, a series of workshops will be conducted at University of Moratuwa (or near Colombo) and online.</li>
+          <li>The competition will consist of multiple elimination rounds, leading up to the final round, which will be held physically at the University of Moratuwa.</li>
+          <li>The most outstanding teams and individuals will be rewarded with exciting prizes for their creativity, innovation and impact.</li>
+        </motion.ul>
         
        </LampContainer>
     </div>
