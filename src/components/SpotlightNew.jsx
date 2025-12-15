@@ -48,7 +48,7 @@ export function SpotlightNew() {
               onClick={() => toggleExpand(id)}
               className="w-full p-5 flex items-center justify-between text-left hover:bg-white/5 transition-colors group"
             >
-              <h3 className="text-base sm:text-lg font-medium text-white pr-4 group-hover:text-purple-300 transition-colors">
+              <h3 className="text-base sm:text-lg font-medium text-white pr-4 group-hover:text-green-300 transition-colors">
                 {title}
               </h3>
               <motion.div
@@ -56,7 +56,7 @@ export function SpotlightNew() {
                 transition={{ duration: 0.3 }}
                 className="flex-shrink-0"
               >
-                <ChevronDown className="w-5 h-5 text-white/70 group-hover:text-purple-300 transition-colors" />
+                <ChevronDown className="w-5 h-5 text-white/70 group-hover:text-green-300 transition-colors" />
               </motion.div>
             </button>
 
@@ -96,7 +96,7 @@ export function SpotlightNew() {
                           </div>
                         </div>
                       </div>
-                      <p className="mt-3 text-center text-white/60 text-sm group-hover:text-purple-300 transition-colors">
+                      <p className="mt-3 text-center text-white/60 text-sm group-hover:text-green-300 transition-colors">
                         Click to watch on YouTube
                       </p>
                     </a>

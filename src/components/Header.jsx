@@ -122,8 +122,8 @@ const Header = () => {
                       item.onlyMobile ? "lg:hidden" : ""
                     } ${
                       activeSection === item.url
-                        ? "text-sky-500" 
-                        : "text-n-1 hover:text-n-4"
+                        ? "text-sky-500"
+                        : "text-n-1 hover:text-[#77FF00]"
                     }`}
                   >
                     {item.title}
