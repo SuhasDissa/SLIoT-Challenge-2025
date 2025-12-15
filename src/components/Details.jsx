@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 const Details = () => {
   return (
     <div className='max-w-[90%] md:max-w-[70%] mx-auto' id='challenge'>
+      
       <LampContainer>
         <motion.h1
             initial={{ opacity: 0.5, y: 100 }}
@@ -14,9 +15,9 @@ const Details = () => {
             duration: 0.8,
             ease: "easeInOut",
             }}
-            className="py-4 mt-8 text-4xl text-center text-white sm:text-5xl font-poppins"
+            className="py-0 text-4xl text-center text-white sm:text-5xl"
         >
-            CHALLENGE DETAILS
+        <div className="audiowide text-4xl sm:text-5xl my-20  text-center text-[#77FF00]">CHALLENGE DETAILS</div>
         </motion.h1>
         <motion.ul
             initial={{ opacity: 0.5, y: 100 }}
@@ -26,7 +27,7 @@ const Details = () => {
             duration: 0.8,
             ease: "easeInOut",
             }}
-            className="mt-8 text-white text-[14px] md:text-[16px] sm:px-6 md:px-10 space-y-4 list-disc list-inside"
+            className=" leading-loose text-white text-[16px] md:text-[18px] alexandria sm:px-6 md:px-14 space-y-4 list-disc list-inside"
         >
           <li>The journey begins with registration, where participants express their interest in the competition.</li>
           <li>An online introductory session will follow, providing detailed information about the challenge and team formation.</li>

@@ -113,12 +113,12 @@ const Header = () => {
                   : "hidden"
               } rounded-lg xl:static xl:flex xl:bg-transparent xl:items-center`}
             >
-              <div className="relative flex flex-col items-start justify-center mt-5 text-center z-2 xl:flex-row xl:items-center xl:bg-transparent xl:px-0 rounded-xl nav-link">
+              <div className="relative flex flex-col items-start justify-center my-3 text-center z-2 xl:flex-row xl:items-center xl:bg-transparent xl:px-0 rounded-xl nav-link">
                 {navigation.map((item) => (
                   <button
                     key={item.id}
                     onClick={() => handleClick(item.url, item.isExternal)}
-                    className={`relative font-poppins text-base transition-colors px-5  py-4 md:py-6 xl:px-3 lg:text-sm lg:font-normal ${
+                    className={`relative font-poppins text-base transition-colors px-5 alexandria py-4 md:py-6 xl:px-4 lg:text-sm lg:font-normal ${
                       item.onlyMobile ? "lg:hidden" : ""
                     } ${
                       activeSection === item.url
@@ -132,7 +132,7 @@ const Header = () => {
               </div>
             </nav>
             <button
-              className="hidden xl:inline-flex relative h-12 overflow-hidden rounded-2xl p-[1px] focus:outline-none"
+              className="hidden alexandria xl:inline-flex relative h-12 overflow-hidden rounded-2xl p-[1px] focus:outline-none"
               onClick={() =>
                 smoothScroll("contact", 1500)
               }

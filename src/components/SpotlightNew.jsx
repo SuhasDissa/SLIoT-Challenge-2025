@@ -31,7 +31,7 @@ export function SpotlightNew() {
         }}
         className="text-4xl text-white sm:text-5xl font-poppins text-center mb-10"
       >
-        SLIoT IN THE SPOTLIGHT
+        <div className="audiowide text-4xl sm:text-5xl mt-32 mb-24 text-center text-[#77FF00]">SLIoT IN THE SPOTLIGHT</div>
       </motion.h2>
 
       <div className="max-w-4xl mx-auto space-y-3">

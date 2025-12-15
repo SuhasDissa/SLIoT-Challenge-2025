@@ -207,7 +207,7 @@ export const aboutGridItems = [
     description: `The SLIoT Challenge is the annual IoT competition organized by the Department of Computer Science & Engineering at the University of Moratuwa, in collaboration with SLT-MOBITEL and the Institution of Engineers, Sri Lanka (IESL). The competition provides a platform for innovators of Sri Lanka to showcase their ideas, which will be evaluated on creativity, value, impact, and technology, with winners selected based on overall performance on the event finals.`,
 
     className:
-      "lg:col-span-6 md:col-span-6 md:row-span-4 lg:min-h-[60vh] text-n-1",
+      "lg:col-span-6 md:col-span-6 md:row-span-4 lg:min-h-[60vh] ",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "",

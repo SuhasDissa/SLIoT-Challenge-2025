@@ -12,7 +12,7 @@ const About = () => {
       transition: {
         duration: 2 
       }}} 
-      className="text-4xl text-white sm:text-5xl font-poppins text-center mt-10 md:mt-20">
+      className="text-4xl text-white sm:text-5xl audiowide text-[#77FF00] text-center mt-10 mb-20 md:mt-20">
         ABOUT SLIoT
       </motion.h2>
       <section className="mt-10">

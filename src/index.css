@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Stack+Sans+Text:wght@200..700&display=swap');
+
+
 
 @tailwind base;
 @tailwind components;
@@ -221,4 +225,13 @@
 * {
   scrollbar-width: thin; /* Thin scrollbar */
   scrollbar-color:   rgb(247, 4, 126) rgba(59, 0, 38, 1)  ; /* Thumb visible, track transparent */
+}
+
+
+.alexandria{
+  font-family: Alexandria;
+}
+
+.audiowide{
+  font-family: Audiowide;
 }

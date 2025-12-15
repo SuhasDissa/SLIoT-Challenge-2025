@@ -19,10 +19,10 @@ const Gallery = () => {
       transition: {
         duration: 2 
       }}} 
-      className="text-4xl text-white sm:text-5xl font-poppins text-center mt-28">
-        GALLERY
+      className="audiowide text-4xl sm:text-5xl text-center text-[#77FF00]">
+        <div className="audiowide text-4xl sm:text-5xl my-32 text-center text-[#77FF00]">GALLERY</div>
       </motion.h2>
-      <h3 className="text-2xl text-n-4 text-start mt-10 mb-6">Previous SLIoT Showcases</h3>
+      {/* <h3 className="text-2xl text-n-4 text-start mt-10 mb-6">Previous SLIoT Showcases</h3> */}
       <section>
         <BentoGrid>
           {(showAll
