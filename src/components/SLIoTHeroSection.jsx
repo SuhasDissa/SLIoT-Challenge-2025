@@ -16,7 +16,7 @@ const SLIoTHeroSection = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden" id="home">
+    <div className="relative pt-16 overflow-hidden" id="home">
       <div>
       {showSpotlights && (
         <>

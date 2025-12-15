@@ -5,15 +5,15 @@ import { motion } from "framer-motion";
 
 const JoinNow = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center px-[4%] md:px-[5%] lg:px-[10%] py-10 md:py-20" id="join">
+    <div className="w-full flex flex-col justify-center items-center px-[4%] md:px-[5%] lg:px-[10%] pb-10 md:py-20" id="join">
       <motion.h2
         initial={{opacity:0,y:50}}
         whileInView={{opacity:1, y:0,
         transition: {
           duration: 2
         }}}
-        className="text-4xl text-white sm:text-5xl audiowide text-[#77FF00] text-center my-10 lg:mt-20">
-        JOIN THE CHALLENGE
+        className="text-4xl text-white sm:text-5xl audiowide text-[#77FF00] text-center mb-10 lg:mt-20">
+        <div className="audiowide text-4xl sm:text-5xl mt-20  text-center text-[#77FF00]">JOIN THE CHALLENGE</div>
       </motion.h2>
 
       <motion.div
