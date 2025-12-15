@@ -136,6 +136,13 @@ import sliot2025_schoolworkshop_28 from "./gallery/SLIoT2025/schoolworkshop/28.j
 import sliot2025_schoolworkshop_29 from "./gallery/SLIoT2025/schoolworkshop/29.jpg";
 import sliot2025_schoolworkshop_30 from "./gallery/SLIoT2025/schoolworkshop/30.jpg";
 
+import sliot2025_finals_1 from "./gallery/SLIoT2025/finals/1.jpeg";
+import sliot2025_finals_2 from "./gallery/SLIoT2025/finals/2.jpeg";
+import sliot2025_finals_3 from "./gallery/SLIoT2025/finals/3.jpeg";
+import sliot2025_finals_4 from "./gallery/SLIoT2025/finals/4.jpeg";
+import sliot2025_finals_5 from "./gallery/SLIoT2025/finals/5.jpeg";
+import sliot2025_finals_6 from "./gallery/SLIoT2025/finals/6.jpeg";
+import sliot2025_finals_8 from "./gallery/SLIoT2025/finals/8.jpeg";
 
 
 
@@ -279,6 +286,13 @@ export {
   sliot2025_schoolworkshop_28,
   sliot2025_schoolworkshop_29,
   sliot2025_schoolworkshop_30,
+  sliot2025_finals_1,
+  sliot2025_finals_2,
+  sliot2025_finals_3,
+  sliot2025_finals_4,
+  sliot2025_finals_5,
+  sliot2025_finals_6,
+  sliot2025_finals_8,
   robot,
   sltLogo,
   cse,
