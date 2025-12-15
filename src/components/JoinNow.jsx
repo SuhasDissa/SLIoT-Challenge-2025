@@ -44,7 +44,7 @@ const JoinNow = () => {
           </motion.a>
 
           <motion.a
-            href="https://chat.whatsapp.com/GtykE7SlPouIlaDrRfK3rH?mode=wwt"
+            href="https://whatsapp.com/channel/0029Vb6sCXjIXnlnXpnoqT05"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}

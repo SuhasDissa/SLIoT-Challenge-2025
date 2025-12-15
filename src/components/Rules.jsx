@@ -90,7 +90,7 @@ const FAQs = () => {
     {
       title: "Where can I get the announcements regarding the competition?",
       content: "By joining this Whatsapp group",
-      link:"https://chat.whatsapp.com/HfCCiDdYdmcDbm86AI9RO1"
+      link:"https://whatsapp.com/channel/0029Vb6sCXjIXnlnXpnoqT05"
     },
   ];
 

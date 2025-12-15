@@ -5,6 +5,7 @@ import {
   facebook,
   youtube,
   linkedin,
+  whatsapp,
   house_icon,
   clock_icon,
   SLIoT2023_1,
@@ -193,6 +194,12 @@ export const socials = [
   },
   {
     id: "3",
+    title: "WhatsApp",
+    iconUrl: whatsapp,
+    url: "https://whatsapp.com/channel/0029Vb6sCXjIXnlnXpnoqT05",
+  },
+  {
+    id: "4",
     title: "LinkedIn",
     iconUrl: linkedin,
     url: "https://www.linkedin.com/company/sliot/",

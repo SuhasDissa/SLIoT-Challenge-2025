@@ -39,7 +39,7 @@ const Loader = () => {
 
       <div className="flex flex-col sm:flex-row gap-4 mt-8">
         <a
-          href="https://chat.whatsapp.com/GtykE7SlPouIlaDrRfK3rH?mode=wwt"
+          href="https://whatsapp.com/channel/0029Vb6sCXjIXnlnXpnoqT05"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-gradient-to-r from-green-500 to-green-600 text-white font-bold text-base px-8 py-3 rounded-full shadow-lg shadow-green-500/50 hover:shadow-green-500/75 hover:scale-105 transition-all duration-300">

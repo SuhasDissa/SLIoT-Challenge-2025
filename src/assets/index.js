@@ -6,6 +6,7 @@ import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 import youtube from "./socials/youtube.svg";
 import linkedin from "./socials/linkedin.svg";
+import whatsapp from "./socials/whatsapp.svg";
 
 import completed from "./completed.png";
 
@@ -165,6 +166,7 @@ export {
   twitter,
   youtube,
   linkedin,
+  whatsapp,
   completed,
   clock_icon,
   house_icon,
