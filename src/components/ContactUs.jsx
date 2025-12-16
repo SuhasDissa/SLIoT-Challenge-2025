@@ -16,13 +16,14 @@ const ContactUs = () => {
         className="text-4xl text-white sm:text-5xl font-poppins text-center mt-10 lg:mt-20">
             <div className="audiowide text-4xl sm:text-5xl mt-32 mb-24 text-center text-[#77FF00]">CONTACT US</div>
         </motion.h2>
-        <div className="flex flex-col md:flex-row justify-center items-center w-full md:gap-8 md:mt-0 flex-wrap">
-            <div className="inter-var">
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-end w-full md:gap-8">
+            {/* Chairman - First on Mobile, Middle on Desktop */}
+            <div className="inter-var mb-8 md:mb-0 order-1 md:order-2">
                 <div className="rounded-3xl bg-transparent relative group/card border-slate-800 w-full md:max-w-[31rem] lg:max-w-[36rem] h-auto p-6 border shadow-lg shadow-black/50">
                     <div className="w-full mt-4 mb-2 flex justify-center">
                         <img
                         src={chairman}
-                        className="h-40 w-40 md:h-60 mb-8 md:w-60 object-cover rounded-full items-center border-1 border-n-1"
+                        className="h-40 w-40 md:h-72 mb-8 md:w-72 object-cover rounded-full items-center border-1 border-n-1"
                         alt="thumbnail" />
                     </div>
                     <div className="text-lg md:text-xl text-center font-bold text-n-1 dark:text-white">
@@ -36,7 +37,9 @@ const ContactUs = () => {
                     </p>
                 </div>
             </div>
-            <div className="inter-var">
+
+            {/* Vice Chairman 1 - Second on Mobile, First on Desktop */}
+            <div className="inter-var mb-8 md:mb-0 order-2 md:order-1">
                 <div className="rounded-3xl bg-transparent relative group/card border-slate-800 w-full md:max-w-[30rem] lg:max-w-[35rem] h-auto p-6 border shadow-lg shadow-black/50">
                     <div className="w-full mt-4 mb-2 flex justify-center">
                         <img
@@ -55,7 +58,9 @@ const ContactUs = () => {
                     </p>
                 </div>
             </div>
-            <div className="inter-var">
+
+            {/* Vice Chairman 2 - Third on Mobile, Third on Desktop */}
+            <div className="inter-var order-3 md:order-3">
                 <div className="rounded-3xl bg-transparent relative group/card border-slate-800 w-full md:max-w-[30rem] lg:max-w-[35rem] h-auto p-6 border shadow-lg shadow-black/50">
                     <div className="w-full mt-4 mb-2 flex justify-center">
                         <img

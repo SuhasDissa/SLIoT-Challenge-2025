@@ -20,7 +20,7 @@ const Gallery = () => {
       className="audiowide text-4xl sm:text-5xl text-center text-[#77FF00]">
         <div className="audiowide text-4xl sm:text-5xl my-32 text-center text-[#77FF00]">GALLERY</div>
       </motion.h2>
-      <section className="mb-16">
+      <section className="mb-4 md:mb-4 lg:mb-8">
         <BentoGrid>
           {currentSLIoTShowcases.map(
             ({

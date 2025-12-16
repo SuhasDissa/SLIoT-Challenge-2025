@@ -88,7 +88,7 @@ const SLIoTHeroSection = () => {
             </div>
           </div>
         </div>
-        <CardContainer className="relative z-10 inter-var md:-ml-32 lg:-ml-48 xl:-ml-64">
+        <CardContainer className="relative z-10 inter-var md:-ml-72 lg:-ml-96 xl:-ml-[28rem]">
           <CardBody className="group/card w-auto sm:w-[20rem] md:w-[22rem] lg:w-[30rem] h-auto z-10 relative">
             <CardItem translateZ="100" className="relative z-10 w-full mt-4">
             <motion.img

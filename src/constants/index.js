@@ -169,8 +169,7 @@ export const navigation = [
   {
     id: "9",
     title: "FAQs",
-    url: "/faqs",
-    isExternal: true,
+    url: "faqs",
   },
   {
     id: "10",

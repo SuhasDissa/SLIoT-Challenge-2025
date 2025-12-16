@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
-import GuilineHeader from "./GuideLineHeader";
 import point_icon from '../assets/checked.png';
 
 const FAQAccordion = ({ title, content, points, link, isOpen, onClick }) => {
@@ -92,8 +91,7 @@ const FAQs = () => {
 
   return (
     <>
-      <GuilineHeader />
-      <div className="min-h-screen  flex flex-col items-center px-[4%] md:px-[5%] lg:px-[10%] py-20">
+      <div id="faqs" className="min-h-screen  flex flex-col items-center px-[4%] md:px-[5%] lg:px-[10%] py-20">
         <motion.h2
           initial={{opacity:0, y:50}}
           whileInView={{opacity:1, y:0}}

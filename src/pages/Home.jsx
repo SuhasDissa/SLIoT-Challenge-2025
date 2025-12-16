@@ -10,8 +10,8 @@ import JoinNow from "@/components/JoinNow";
 import Details from "@/components/Details";
 import SLIoTHeroSection from "@/components/SLIoTHeroSection";
 import { SpotlightNew } from "@/components/SpotlightNew";
-import GuideLines from "@/components/GuideLines";
 import Header from "@/components/Header";
+import FAQs from "@/components/Rules";
 
 const Home = () => {
   return (
@@ -28,6 +28,7 @@ const Home = () => {
       <Gallery />
       <SpotlightNew />
       <EventOrganizers />
+      <FAQs />
       <ContactUs />
 
     </div>
