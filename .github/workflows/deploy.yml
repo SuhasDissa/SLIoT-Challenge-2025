@@ -12,6 +12,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Checkout repo
@@ -22,11 +23,25 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
+      - name: Test SSH Connection
+        run: |
+          echo "Testing SSH connection..."
+          ssh -v -o StrictHostKeyChecking=no -o ConnectTimeout=30 -o BatchMode=yes ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "echo 'SSH OK'; whoami; pwd"
+
       - name: Deploy to server
-        run: ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "\
-          set -e; \
-          cd ${{ secrets.APP_PATH }}; \
-          git pull origin main; \
-          npm ci --no-progress; \
-          npm run build" 2>&1
+        run: |
+          ssh -o StrictHostKeyChecking=no -o BatchMode=yes ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} 'bash -s' << 'ENDSSH'
+          set -ex
+          echo "=== Starting deployment ==="
+          cd /var/www/sliot/SLIoT-Challenge-2025
+          echo "=== Current directory ==="
+          pwd
+          echo "=== Git pull ==="
+          git pull origin main
+          echo "=== Installing dependencies ==="
+          npm ci --no-progress
+          echo "=== Building ==="
+          npm run build
+          echo "=== Deployment complete ==="
+          ENDSSH
 
