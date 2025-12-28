@@ -13,7 +13,7 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "DECEMBER",
+      date: "JANUARY",
       title: "Introductory Session (Online)",
       description:
         "An online introductory session to familiarize participants with the competition guidelines, rules, and expectations.",
@@ -21,7 +21,7 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "DECEMBER",
+      date: "JANUARY",
       title: "Opening Proposal Acceptance",
       description:
         "Teams can start submitting their project proposals for evaluation by the judging panel.",
