@@ -13,7 +13,7 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "JANUARY",
+      date: "JANUARY - 03",
       title: "Introductory Session (Online)",
       description:
         "An online introductory session to familiarize participants with the competition guidelines, rules, and expectations.",
@@ -21,7 +21,7 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "JANUARY",
+      date: "JANUARY - 05",
       title: "Opening Proposal Acceptance",
       description:
         "Teams can start submitting their project proposals for evaluation by the judging panel.",
@@ -29,10 +29,19 @@ export default function TimeLine() {
       isActive: true,
     },
     {
-      date: "JANUARY",
+      date: "JANUARY - 12",
       title: "SLIoT Innovation Tour",
       description:
         "An innovation tour to inspire participants and showcase the potential of IoT solutions in real-world applications.",
+      imgSrc: "assets/3.png",
+      isActive: true,
+    },
+
+       {
+      date: "JANUARY - 24",
+      title: "Close Registrations Acceptance",
+      description:
+        "Final date for teams to complete their registration for the challenge. No new registrations will be accepted after this date.",
       imgSrc: "assets/3.png",
       isActive: true,
     },
