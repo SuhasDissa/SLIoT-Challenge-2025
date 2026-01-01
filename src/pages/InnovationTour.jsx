@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
+import ContactUs from "../components/ContactUs";
 
 const InnovationTour = () => {
     const locations = [
@@ -28,12 +29,6 @@ const InnovationTour = () => {
         { date: "20-22 December 2025", task: "Awaiting replies from schools" },
         { date: "01 January 2026", task: "Confirming schools again via telephone calls or emails" },
         { date: "12-16 January 2026", task: "Proposed dates for the workshop series" },
-    ];
-
-    const contacts = [
-        { name: "Buwaneka Halpage", role: "Chairperson", email: "buwanekah.23@cse.mrt.ac.lk", phone: "+94 74 022 4877" },
-        { name: "Yasiru Bandara", role: "Vice Chairperson", email: "yasirub.23@cse.mrt.ac.lk", phone: "+94 76 015 9557" },
-        { name: "Gishan Bandara", role: "Vice Chairperson", email: "gishanb.23@cse.mrt.ac.lk", phone: "+94 70 335 2954" },
     ];
 
     return (
@@ -417,50 +412,7 @@ const InnovationTour = () => {
             </section>
 
             {/* Contact Details Section */}
-            <section id="contact" className="py-20 px-4">
-                <div className="container mx-auto max-w-6xl">
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.8 }}
-                        viewport={{ once: true }}
-                    >
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-12 text-center">
-                            Contact Details
-                        </h2>
-                        <div className="grid md:grid-cols-3 gap-8">
-                            {contacts.map((contact, index) => (
-                                <motion.div
-                                    key={index}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                                    viewport={{ once: true }}
-                                    className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-lg rounded-2xl p-8 border border-slate-700/50 hover:border-[#46BC41]/50 transition-all duration-300"
-                                >
-                                    <div className="text-5xl mb-4 text-center">👤</div>
-                                    <h3 className="text-xl font-bold text-white mb-2 text-center">{contact.name}</h3>
-                                    <p className="text-[#46BC41] font-semibold mb-4 text-center">{contact.role}</p>
-                                    <div className="space-y-3 text-gray-300">
-                                        <a href={`mailto:${contact.email}`} className="flex items-center gap-2 hover:text-[#46BC41] transition-colors">
-                                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                            </svg>
-                                            <span className="text-sm break-all">{contact.email}</span>
-                                        </a>
-                                        <a href={`tel:${contact.phone}`} className="flex items-center gap-2 hover:text-[#46BC41] transition-colors">
-                                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                            </svg>
-                                            <span className="text-sm">{contact.phone}</span>
-                                        </a>
-                                    </div>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </motion.div>
-                </div>
-            </section>
+            <ContactUs />
 
 
         </div>
