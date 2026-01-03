@@ -12,6 +12,7 @@ import SelectedTeams from "./pages/SelectedTeams";
 import InnovationTour from "./pages/InnovationTour";
 import Snowfall from "./components/Snowfall";
 import christmasImage from "./assets/christmas.avif";
+import NotFound from "./components/NotFound";
 
 
 const App = () => {
@@ -61,7 +62,7 @@ const App = () => {
           <Route path="/guidelines" element={<SubmissionGuidelines />} />
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/finalists" element={<SelectedTeams />} />
-
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       <Footer className="mt-auto" />
